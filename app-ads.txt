@@ -1,1 +1,104 @@
 google.com, pub-6985326493431492, DIRECT, f08c47fec0942fa0
+# Unity Ads
+unity.com, 6264017, DIRECT, 96cabb5fbdde37a7
+
+# IronSource Ads
+ironsrc.com, 222871, DIRECT, 79929e88b2ba73bc
+
+# Additional Authorized Sellers
+rubiconproject.com, 24400, RESELLER, 0bfd66d529a55807
+rubiconproject.com, 17608, RESELLER, 0bfd66d529a55807
+rubiconproject.com, 25978, RESELLER, 0bfd66d529a55807
+rubiconproject.com, 26292, RESELLER, 0bfd66d529a55807
+rubiconproject.com, 16114, RESELLER, 0bfd66d529a55807
+rubiconproject.com, 12266, RESELLER, 0bfd66d529a55807
+rubiconproject.com, 15526, RESELLER, 0bfd66d529a55807
+rubiconproject.com, 25064, RESELLER, 0bfd66d529a55807
+rubiconproject.com, 25872, RESELLER, 0bfd66d529a55807
+rubiconproject.com, 26270, RESELLER, 0bfd66d529a55807
+rubiconproject.com, 24170, RESELLER, 0bfd66d529a55807
+rubiconproject.com, 24362, RESELLER, 0bfd66d529a55807
+rubiconproject.com, 26156, RESELLER, 0bfd66d529a55807
+rubiconproject.com, 26158, RESELLER, 0bfd66d529a55807
+rubiconproject.com, 20744, RESELLER, 0bfd66d529a55807
+rubiconproject.com, 15854, RESELLER, 0bfd66d529a55807
+rubiconproject.com, 17608, RESELLER, 0bfd66d529a55807
+rubiconproject.com, 26292, RESELLER, 0bfd66d529a55807
+rubiconproject.com, 25060, RESELLER, 0bfd66d529a55807
+rubiconproject.com, 26064, RESELLER, 0bfd66d529a55807
+
+video.unrulymedia.com, 2464975885, RESELLER
+video.unrulymedia.com, 123476257, RESELLER
+video.unrulymedia.com, 498216989, RESELLER
+video.unrulymedia.com, 322585001, RESELLER
+video.unrulymedia.com, 689559416, RESELLER
+video.unrulymedia.com, 324806554, RESELLER, a670c89d4a324e47
+video.unrulymedia.com, 6111915185540403805, RESELLER
+video.unrulymedia.com, 848837292, RESELLER
+video.unrulymedia.com, 158727213, RESELLER
+video.unrulymedia.com, 755432070, RESELLER
+video.unrulymedia.com, 585054906, RESELLER
+
+appnexus.com, 9382, RESELLER, f5ab79cb980f11d1
+appnexus.com, 15426, RESELLER, f5ab79cb980f11d1
+appnexus.com, 15629, RESELLER
+appnexus.com, 15980, RESELLER, f5ab79cb980f11d1
+appnexus.com, 12878, RESELLER, f5ab79cb980f11d1
+appnexus.com, 15349, RESELLER, f5ab79cb980f11d1
+
+openx.com, 540679900, RESELLER, 6a698e2ec38604c6
+openx.com, 540861995, RESELLER, 6a698e2ec38604c6
+openx.com, 540857594, RESELLER, 6a698e2ec38604c6
+openx.com, 541017750, RESELLER, 6a698e2ec38604c6
+openx.com, 540393169, RESELLER, 6a698e2ec38604c6
+
+conversantmedia.com, 100358, RESELLER, 03113cd04947736d
+conversantmedia.com, 100396, RESELLER, 03113cd04947736d
+conversantmedia.com, 100863, RESELLER, 03113cd04947736d
+
+contextweb.com, 562791, RESELLER, 89ff185a4c4e857c
+contextweb.com, 563217, RESELLER, 89ff185a4c4e857c
+contextweb.com, 562827, RESELLER, 89ff185a4c4e857c
+contextweb.com, 563265, RESELLER, 89ff185a4c4e857c
+
+pubmatic.com, 156520, RESELLER, 5d62403b186f2ace
+pubmatic.com, 158060, RESELLER, 5d62403b186f2ace
+pubmatic.com, 160456, RESELLER, 5d62403b186f2ace
+pubmatic.com, 161151, RESELLER, 5d62403b186f2ace
+pubmatic.com, 162270, RESELLER, 5d62403b186f2ace
+pubmatic.com, 162882, RESELLER, 5d62403b186f2ace
+pubmatic.com, 163319, RESELLER, 5d62403b186f2ace
+pubmatic.com, 164532, RESELLER, 5d62403b186f2ace
+pubmatic.com, 165438, RESELLER, 5d62403b186f2ace
+
+outbrain.com, 0023749a2264ea0429a71b54ac9ca0de9a, RESELLER
+outbrain.com, 00ab8f68679cc060c8bbc1035e70030614, RESELLER
+
+verve.com, 15503, RESELLER, 0c8f5958fc2d6270
+
+loopme.com, 11463, RESELLER, 6c8d5f95897a5a3b
+loopme.com, 11635, RESELLER, 6c8d5f95897a5a3b
+
+smartadserver.com, 3172, RESELLER, 060d053dcf45cbf3
+smartadserver.com, 4610, RESELLER, 060d053dcf45cbf3
+
+xandr.com, 13799, RESELLER
+xandr.com, 15769, RESELLER
+
+bid-matrix.com, f2c71a45ea149366, RESELLER
+betweendigital.com, 45329, RESELLER
+
+playwire.com, 1025119, RESELLER
+
+pokkt.com, 6246, RESELLER, c45702d9311e25fd
+
+inmobi.com, edd282ac8f29464792bf2b7f3df2f9df, RESELLER, 83e75a7ae333ca9d
+inmobi.com, 791b84bdd791470faa8dca5f04e6a83b, RESELLER, 83e75a7ae333ca9d
+inmobi.com, b01aa06531c543d8a5fb9982f60afb00, RESELLER, 83e75a7ae333ca9d
+
+thebrave.io, 1234648, RESELLER, c25b2154543746ac
+thebrave.io, 1234634, DIRECT, c25b2154543746ac
+
+zetaglobal.net, 815, RESELLER
+rhebus.works, 5000863388, RESELLER
+
