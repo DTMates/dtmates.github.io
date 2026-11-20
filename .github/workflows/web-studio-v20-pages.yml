@@ -39,3 +39,13 @@ jobs:
       - name: Deploy to the public GitHub Pages URL
         uses: actions/deploy-pages@v4
         id: deployment
+      - name: Verify the public V20 site and original media over HTTPS
+        run: |
+          set -eu
+          BASE=https://dtmates.github.io/web-studio-v20
+          for route in / /studio-v20.css /studio-v20.js /builder.html /services.html /pricing.html /contact.html /case/timo.html /case/agile.html /case/pawmaster.html /media/timo-desktop.jpg /media/agile-desktop.jpg /media/paw-dog.webp; do
+            curl -fsSL --retry 12 --retry-all-errors --retry-delay 5 --connect-timeout 10 --max-time 30 "$BASE$route" >/dev/null
+            echo "Verified: $BASE$route"
+          done
+          curl -fsSL "$BASE/" | grep -q 'Digitální zážitky'
+
