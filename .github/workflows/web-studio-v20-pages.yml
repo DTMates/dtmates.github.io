@@ -1,0 +1,41 @@
+name: Publish Web Studio V20 Preview
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'web-studio-v20/**'
+      - '.github/workflows/web-studio-v20-pages.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate public test site contents
+        run: |
+          test -f app-ads.txt
+          for page in index.html builder.html services.html pricing.html contact.html case/timo.html case/agile.html case/pawmaster.html; do test -f "web-studio-v20/$page"; done
+          for asset in timo-desktop.jpg timo-mobile.jpg timo-collections.jpg agile-desktop.jpg agile-mobile.jpg paw-dog.webp timo-wireless.webp timo-swim.webp timo-robe.webp; do test -s "web-studio-v20/media/$asset"; done
+          test -s web-studio-v20/studio-v20.css
+          test -s web-studio-v20/studio-v20.js
+      - name: Enable GitHub Pages for this public repository
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - name: Upload whole public tree without changing existing app-ads
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - name: Deploy to the public GitHub Pages URL
+        uses: actions/deploy-pages@v4
+        id: deployment
