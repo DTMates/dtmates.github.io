@@ -1,0 +1,89 @@
+name: Verify published Web Studio V20 in Chromium
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'web-studio-v20/**'
+      - '.github/workflows/v20-public-visual.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  live-ui:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser for genuine public site screenshots
+        run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Browser-check live HTTPS pages, motion and interactive controls
+        shell: bash
+        run: |
+          mkdir -p v20-browser-output
+          node --input-type=module <<'NODE'
+          import {chromium} from 'playwright';
+          import {writeFile} from 'node:fs/promises';
+          const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
+          const base='https://dtmates.github.io/web-studio-v20/';
+          const routes=[
+            ['','home'],['builder.html','builder'],['services.html','services'],
+            ['pricing.html','pricing'],['contact.html','contact'],['case/timo.html','timo'],
+            ['case/agile.html','agile'],['case/pawmaster.html','pawmaster']
+          ];
+          const checks=[],errors=[];
+          for(const [route,id] of routes)for(const width of [390,1440]){
+            const page=await browser.newPage({viewport:{width,height:900},reducedMotion:'reduce'});
+            const pageErrors=[];page.on('pageerror',e=>pageErrors.push(e.message));
+            const response=await page.goto(base+route,{waitUntil:'networkidle',timeout:45000});
+            if(!response?.ok())errors.push(id+' '+width+' HTTP '+response?.status());
+            const state=await page.evaluate(async()=>{
+              await document.fonts.ready;
+              const imgs=[...document.images].filter(img=>img.getClientRects().length);
+              await Promise.all(imgs.map(async img=>{try{await img.decode()}catch{}}));
+              return {overflow:document.documentElement.scrollWidth-innerWidth,
+               broken:imgs.filter(img=>img.naturalWidth===0).map(img=>img.src)}
+            });
+            if(state.overflow>4)errors.push(id+' '+width+' horizontal overflow '+state.overflow);
+            if(state.broken.length)errors.push(id+' '+width+' broken images '+state.broken.join(','));
+            if(pageErrors.length)errors.push(id+' '+width+' runtime '+pageErrors.join(','));
+            await page.screenshot({path:'v20-browser-output/'+id+'-'+width+'.png',fullPage:true,animations:'disabled'});
+            checks.push({id,width,http:response?.status(),...state,pageErrors});
+            if(width===1440){
+              if(id==='home'){
+                await page.locator('[data-stage-select="agile"]').click();
+                if(await page.locator('[data-stage="agile"].is-active').count()!==1)errors.push('live hero project not interactive');
+                await page.locator('[data-lab-kind="app"]').click();
+                await page.locator('#lab-headline').fill('Real browser validation');
+                if(await page.locator('[data-lab-output]').textContent()!=='Real browser validation')errors.push('live mini builder broken');
+              }else if(id==='builder'){
+                await page.locator('[name="hero-title"]').fill('Personalized QA');
+                if(await page.locator('[data-editor-title]').textContent()!=='Personalized QA')errors.push('live full editor broken');
+              }else if(id==='paw'){
+                for(let i=0;i<4;i++)await page.locator('[data-training-next]').click();
+                if(await page.locator('[data-training-count]').textContent()!=='05 / 05')errors.push('live lesson broken');
+              }
+            }
+            await page.close();
+          }
+          const motion=await browser.newPage({viewport:{width:1440,height:900},reducedMotion:'no-preference'});
+          await motion.goto(base,{waitUntil:'networkidle'});
+          const animation=await motion.locator('.ribbon-line').evaluate(el=>getComputedStyle(el).animationName);
+          if(animation==='none')errors.push('real hero/ribbon CSS animation not running');
+          await motion.close();await browser.close();
+          await writeFile('v20-browser-output/report.json',JSON.stringify({count:checks.length,errors,checks},null,2));
+          console.log('V20 public URL: '+base+'; '+checks.length+' responsive screenshots; errors='+errors.length);
+          if(errors.length)throw Error(errors.join('\n'));
+          NODE
+      - name: Save genuine live public browser captures
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dtmates-v20-live-public-browser
+          path: v20-browser-output/
+          retention-days: 14
+          if-no-files-found: warn
