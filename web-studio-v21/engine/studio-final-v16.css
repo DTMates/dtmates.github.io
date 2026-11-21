@@ -1,0 +1,221 @@
+/* V16 finish: real brand exploration, usable device gallery and high-contrast UI polish.
+   All images and sites are part of this repository; no network fonts, mock metrics or UI rasterization. */
+.v16-brand-section{position:relative;isolation:isolate;overflow:clip;background:linear-gradient(150deg,#031e1b,#0b3e30 58%,#06271e);padding:clamp(62px,6vw,100px) 0}
+.v16-brand-section:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 80% 37%,#dbb66e40,transparent 41%),url("assets/visuals/cinematic-valley.svg") center/cover;opacity:.2}
+.v16-brand-section .v15-brand-top{align-items:end;margin-bottom:31px}
+.v16-brand-intro{max-width:750px;color:#c0d6c5;font-size:13px;line-height:1.8;margin-top:10px}
+.v16-brand-stage{--v16-paper:#f8e7c8;--v16-ink:#3f2d25;--v16-accent:#8b5d3b;--v16-title:'Young Serif',Georgia,serif;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.15fr);min-height:435px;overflow:hidden;border-radius:22px;background:var(--v16-paper);color:var(--v16-ink);box-shadow:0 28px 75px #001a1396,0 0 45px #f4c98830;border:1px solid #f9d99e8a;transition:background .3s,color .3s,border-color .3s}
+.v16-brand-stage[data-v16-brand-stage=blackline]{--v16-paper:#111719;--v16-ink:#edfae5;--v16-accent:#d0eb53;--v16-title:'Barlow Condensed',Impact,sans-serif;border-color:#d0eb53}
+.v16-brand-stage[data-v16-brand-stage=hotel]{--v16-paper:#e6e0d4;--v16-ink:#2f4034;--v16-accent:#8a775d;--v16-title:'Cormorant Garamond',Georgia,serif}
+.v16-brand-stage[data-v16-brand-stage=wellness]{--v16-paper:#e6f0e5;--v16-ink:#385b45;--v16-accent:#6d9571;--v16-title:'Instrument Serif',Georgia,serif}
+.v16-brand-stage[data-v16-brand-stage=realty]{--v16-paper:#e3e5db;--v16-ink:#333f37;--v16-accent:#8b9d8c;--v16-title:'DM Serif Text',Georgia,serif}
+.v16-brand-stage[data-v16-brand-stage=electric]{--v16-paper:#f2c342;--v16-ink:#18283c;--v16-accent:#263e54;--v16-title:'Archivo Black',Impact,sans-serif}
+.v16-brand-stage[data-v16-brand-stage=dental]{--v16-paper:#e3f0f8;--v16-ink:#255d8b;--v16-accent:#368ac1;--v16-title:'Atkinson Hyperlegible Next',system-ui,sans-serif}
+.v16-brand-stage[data-v16-brand-stage=bloom]{--v16-paper:#f8d4a3;--v16-ink:#643c63;--v16-accent:#c7509a;--v16-title:'Bricolage Grotesque',system-ui,sans-serif}
+.v16-brand-stage[data-v16-brand-stage=timo]{--v16-paper:#e7d1d6;--v16-ink:#572f43;--v16-accent:#a9697e;--v16-title:'Gloock',Georgia,serif}
+.v16-brand-stage[data-v16-brand-stage=signal]{--v16-paper:#111f33;--v16-ink:#edf4fa;--v16-accent:#7cb8e6;--v16-title:'Geist',system-ui,sans-serif}
+.v16-brand-stage-info{display:flex;flex-direction:column;align-items:flex-start;padding:clamp(25px,3.4vw,56px);justify-content:center;min-width:0;position:relative;z-index:2}
+.v16-brand-counter{font-size:10px;letter-spacing:.14em;font-weight:800;color:var(--v16-accent);text-transform:uppercase}
+.v16-brand-stage-info h3{font:400 clamp(57px,6.6vw,115px)/1.04 var(--v16-title);letter-spacing:-.06em;margin:20px 0 11px;max-width:100%;overflow-wrap:break-word}
+.v16-brand-stage[data-v16-brand-stage=blackline] h3,.v16-brand-stage[data-v16-brand-stage=electric] h3{text-transform:uppercase;letter-spacing:-.035em;font-weight:850}
+.v16-brand-stage[data-v16-brand-stage=dental] h3,.v16-brand-stage[data-v16-brand-stage=signal] h3{font-weight:770;letter-spacing:-.085em}
+.v16-brand-stage-info>p:not(.v16-brand-disclaimer){font-size:13px;line-height:1.7;max-width:440px;opacity:.92}
+.v16-brand-pills{display:flex;gap:7px;align-items:center;flex-wrap:wrap;margin:25px 0 23px}
+.v16-brand-pills span{border:1px solid currentColor;border-radius:18px;padding:7px 10px;font-size:10px;font-weight:700;opacity:.82}
+.v16-brand-open{display:inline-flex;align-items:center;gap:13px;background:var(--v16-ink);color:var(--v16-paper);border:1px solid transparent;border-radius:50px;padding:14px 23px;font-weight:740;font-size:12px;box-shadow:0 14px 30px #0002;transition:transform .25s,box-shadow .25s}
+.v16-brand-open:hover{transform:translateY(-4px);box-shadow:0 18px 40px #0004}
+.v16-brand-open:focus-visible,.v16-brand-selector button:focus-visible{outline:3px solid #ffcf82;outline-offset:4px}
+.v16-brand-disclaimer{font-size:10px;line-height:1.6;opacity:.68;margin-top:20px;max-width:420px}
+.v16-brand-stage-art{position:relative;min-height:360px;padding:25px;display:grid;align-items:center;overflow:hidden;isolation:isolate}
+.v16-brand-stage-art:before{content:"";position:absolute;inset:0;z-index:-2;background:radial-gradient(circle at 50% 40%,#fff9e8a0,transparent 60%);mix-blend-mode:multiply}
+.v16-brand-stage-art:after{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(90deg,var(--v16-paper),transparent 26%,transparent 74%,var(--v16-paper));pointer-events:none;opacity:.45}
+.v16-brand-stage-art img{width:100%;height:auto;max-height:380px;aspect-ratio:1440/900;object-fit:cover;object-position:top;border-radius:10px;border:2px solid #fffffff2;box-shadow:0 22px 55px #0006;transform:perspective(1200px) rotateY(-5deg) rotateX(2deg) translateY(8px);transition:transform .6s cubic-bezier(.2,.9,.24,1),opacity .2s}
+.v16-brand-stage:hover .v16-brand-stage-art img{transform:perspective(1200px) rotateY(-1deg) rotateX(0) translateY(0)}
+.v16-brand-stage-browser{position:absolute;top:8%;left:0;right:5%;z-index:2;display:flex;justify-content:space-between;gap:15px;color:#ddd9cc;background:#162b2a;padding:11px 15px;border:1px solid #ffffff55;border-radius:9px 9px 0 0;box-shadow:0 9px 15px #0006;transform:rotate(-1deg)}
+.v16-brand-stage-browser>span{color:#f7bb7d;font-size:10px}
+.v16-brand-stage-browser small{font-size:10px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
+.v16-brand-stage.is-switching .v16-brand-stage-art img{animation:v16-preview-enter .35s cubic-bezier(.2,.9,.24,1) both}
+@keyframes v16-preview-enter{from{opacity:.3;transform:translateY(20px) scale(.98)}to{opacity:1;transform:perspective(1200px) rotateY(-5deg) rotateX(2deg) translateY(8px)}}
+.v16-brand-section .v15-brand-pills.v16-brand-selector{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:9px;margin-top:17px;margin-bottom:0}
+.v16-brand-selector>button{display:flex;min-width:0;flex-direction:column;gap:5px;align-items:start;text-align:left;border:1px solid #edce9677;background:#0b392f;border-radius:11px;color:#fff7e2;padding:8px;cursor:pointer;box-shadow:0 12px 25px #00150f66;transition:transform .26s,border-color .26s,background .26s}
+.v16-brand-selector>button[aria-pressed=true]{border-color:#f5d38c;background:#226b4c;box-shadow:0 0 0 2px #eec9897d,0 16px 28px #00160e97}
+.v16-brand-selector>button:hover{transform:translateY(-4px);border-color:#f5d38c}
+.v16-brand-selector>button img{width:100%;aspect-ratio:1.1;object-fit:cover;object-position:top;border-radius:6px}
+.v16-brand-selector>button strong{font-size:clamp(10px,.85vw,15px);line-height:1.1;overflow-wrap:anywhere}
+.v16-brand-selector>button small{font-size:8px;letter-spacing:.1em;color:#dccb9b}
+.v16-brand-selector>button[data-v16-brand=cafe] strong{font-family:'Young Serif',Georgia,serif}
+.v16-brand-selector>button[data-v16-brand=blackline] strong{font-family:'Barlow Condensed',Impact,sans-serif;text-transform:uppercase;font-size:15px}
+.v16-brand-selector>button[data-v16-brand=hotel] strong{font-family:'Cormorant Garamond',Georgia,serif;font-size:16px}
+.v16-brand-selector>button[data-v16-brand=wellness] strong{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:17px}
+.v16-brand-selector>button[data-v16-brand=realty] strong{font-family:'DM Serif Text',Georgia,serif}
+.v16-brand-selector>button[data-v16-brand=electric] strong{font-family:'Archivo Black',Impact,sans-serif}
+.v16-brand-selector>button[data-v16-brand=dental] strong{font-family:'Atkinson Hyperlegible Next',system-ui,sans-serif}
+.v16-brand-selector>button[data-v16-brand=bloom] strong{font-family:'Bricolage Grotesque',sans-serif;font-weight:800}
+.v16-brand-selector>button[data-v16-brand=timo] strong{font-family:'Gloock',Georgia,serif}
+.v16-brand-selector>button[data-v16-brand=signal] strong{font-family:'Geist',system-ui,sans-serif;letter-spacing:-.04em}
+.v16-brand-bottom{display:flex;justify-content:space-between;gap:14px;align-items:center;margin-top:19px;border-top:1px solid #ddcc9552;padding-top:17px;font-size:11px;line-height:1.55;color:#c1d6c1}
+.v16-brand-bottom a{white-space:nowrap;border-bottom:1px solid #ecc780;color:#f8cb88}
+.v16-mobile-controls{display:none;justify-content:space-between;align-items:center;gap:13px;padding-bottom:13px}
+.v16-mobile-controls>span{color:#b8d7bd;font-size:11px}
+.v16-mobile-controls>div{display:flex;gap:7px}
+.v16-mobile-controls button{width:43px;height:43px;display:grid;place-items:center;border-radius:50%;background:#e7c483;color:#183a2e;border:1px solid #ffdf9b;font-size:22px;cursor:pointer}
+.v16-mobile-controls button:hover{background:#fff2c6}
+.v15-mobile-phone--paw .v16-paw-mobile-canvas{background:linear-gradient(180deg,#d7ead4,#b9d9bf);padding:0}
+.v16-paw-mobile-ui{min-height:0;height:100%;color:#1b5136;display:flex;flex-direction:column;background:linear-gradient(#dcefe0,#c5e6cb);overflow:hidden;text-align:left}
+.v16-paw-mobile-top{display:flex;justify-content:space-between;align-items:center;background:#143e32;color:#fff9e7;padding:11px 10px;font-size:9px;font-weight:750}
+.v16-paw-mobile-brand{display:flex;justify-content:space-between;align-items:center;padding:14px 11px;background:#143e32;color:#fbe8c4;font-size:15px;font-weight:800;font-family:'Bricolage Grotesque',sans-serif}
+.v16-paw-mobile-ui>p{font-size:8px;letter-spacing:.11em;font-weight:800;color:#4d8d64;padding:13px 13px 0}
+.v16-paw-mobile-ui>h4{font:750 clamp(18px,2vw,27px)/1.1 'Bricolage Grotesque',sans-serif;letter-spacing:-.06em;padding:8px 13px;margin:0}
+.v16-paw-mobile-profile{display:flex;gap:9px;align-items:center;background:#fffef6;border-radius:12px;padding:8px;margin:8px 11px;min-height:70px}
+.v16-paw-mobile-profile>img{width:51px!important;height:60px!important;flex:0 0 51px;aspect-ratio:auto!important;object-fit:cover;object-position:center 25%;border-radius:9px}
+.v16-paw-mobile-profile>span{display:flex;flex-direction:column;gap:4px}
+.v16-paw-mobile-profile strong{font:400 19px var(--v10-serif)}
+.v16-paw-mobile-profile small{font-size:9px;color:#608b6b}
+.v16-paw-mobile-progress{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin:8px 11px}
+.v16-paw-mobile-progress strong{padding:12px 5px;border-radius:8px;text-align:center;background:#b5dcb9;color:#185335;font-size:16px;font-weight:800}
+.v16-paw-mobile-track{height:8px;margin:14px 11px;background:#b6d4bc;border-radius:10px;overflow:hidden}
+.v16-paw-mobile-track i{display:block;height:100%;background:#448f67;border-radius:10px}
+.v16-paw-mobile-button{margin:12px 11px 0;padding:12px 5px;text-align:center;font-size:10px;font-weight:800;background:#e9c984;border-radius:20px}
+.v16-paw-mobile-ui>small{font-size:7px;color:#63816b;text-align:center;line-height:1.4;margin:auto 9px 14px}
+.v15-site .v16-brand-stage,.v15-site .v15-featured-grid,.v15-site .v15-mobile-phone-reel{scroll-margin-top:100px}
+.v15-site .v16-brand-section,.v15-site .v15-featured,.v15-site .v15-showroom,.v15-site .v15-mobile-gallery{border-top:1px solid #bfc49a30}
+.v15-site .v15-hero-scene .v15-hero-portrait{right:-1%;top:-7%;width:25%;height:39%;z-index:4;mask-image:radial-gradient(ellipse at center,#000 52%,transparent 75%);mask-composite:add;opacity:.98}
+.v15-site .v15-hero-scene .v15-hero-portrait img{object-position:center 28%}
+.v15-site .v15-hero-scene .v15-hero-portrait>span{display:none}
+.v15-site .v10-hero-grid{gap:3.4vw}
+.v15-site .v15-hero-scene .v10-laptop{position:relative}
+.v15-site .v15-hero-scene .v15-hero-portrait:hover{opacity:1}
+body.production.studio-art.v15-editorial .production-title{min-height:330px}
+body.production.studio-art.v15-editorial .production-title h1{text-wrap:balance}
+body.production.studio-art.v15-editorial .production-intro{line-height:1.85;max-width:880px}
+body.production.page-pricing.v15-editorial .production-price article{border-radius:17px;box-shadow:0 18px 44px #18241c20}
+body.production.page-services.v15-editorial .production-modes article{transition:transform .3s,box-shadow .3s}
+body.production.page-services.v15-editorial .production-modes article:hover{transform:translateY(-5px);box-shadow:0 24px 55px #10281a36}
+body.production.page-apps.v15-editorial .app-route-types article{transition:transform .3s}
+body.production.page-apps.v15-editorial .app-route-types article:hover{transform:translateY(-4px)}
+@media(max-width:1100px){
+ .v16-brand-section .v15-brand-pills.v16-brand-selector{grid-template-columns:repeat(5,minmax(0,1fr))}
+ .v16-brand-selector>button img{aspect-ratio:1.7}
+ .v16-brand-selector>button strong{font-size:13px}
+}
+@media(max-width:850px){
+ .v16-brand-stage{grid-template-columns:1fr;min-height:0}
+ .v16-brand-stage-info{padding:31px}
+ .v16-brand-stage-art{min-height:320px;padding:30px}
+ .v16-brand-stage-art img{max-height:350px}
+ .v16-brand-stage-browser{top:12px;left:22px}
+}
+@media(max-width:650px){
+ .v16-brand-section{padding:60px 0 72px}
+ .v16-brand-stage{border-radius:15px}
+ .v16-brand-stage-info{padding:25px 22px}
+ .v16-brand-stage-info h3{font-size:clamp(47px,13vw,85px);margin:14px 0}
+ .v16-brand-stage-info>p:not(.v16-brand-disclaimer){font-size:12px}
+ .v16-brand-stage-art{min-height:236px;padding:20px 15px}
+ .v16-brand-stage-art img{max-height:260px}
+ .v16-brand-stage-browser{left:7px;top:0;right:7px;padding:7px 10px}
+ .v16-brand-section .v15-brand-pills.v16-brand-selector{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:9px;padding:5px 3px 15px;margin-inline:-3px}
+ .v16-brand-selector>button{flex:0 0 110px;scroll-snap-align:start}
+ .v16-brand-selector>button img{aspect-ratio:1.2}
+ .v16-brand-bottom{flex-wrap:wrap;font-size:10px}
+ .v16-mobile-controls{display:flex}
+ .v16-paw-mobile-profile{padding:6px;min-height:0}
+ .v16-paw-mobile-profile>img{width:40px!important;height:48px!important;flex-basis:40px}
+ .v16-paw-mobile-ui>h4{font-size:19px}
+ .v16-paw-mobile-ui>p{padding-top:9px;font-size:7px}
+ .v16-paw-mobile-progress strong{font-size:14px;padding:8px}
+ .v16-paw-mobile-button{margin-top:7px;padding:9px 4px}
+ .v16-paw-mobile-ui>small{font-size:6px}
+ .v15-site .v15-hero-scene .v15-hero-portrait{width:23%;height:29%;top:-6%;right:0;z-index:4}
+}
+@media(prefers-reduced-motion:reduce){
+ .v16-brand-stage,.v16-brand-stage-art img,.v16-brand-selector>button,.v16-brand-open,
+ body.production.page-services.v15-editorial .production-modes article,
+ body.production.page-apps.v15-editorial .app-route-types article{transition:none!important;animation:none!important}
+}
+
+
+/* PawMaster: genuine five-step client-side demo state, not prerecorded animation. */
+.v16-paw-trainer{background:linear-gradient(120deg,#e9f3e7,#f5eedb 52%,#d8e9d3);color:#164b37;padding:clamp(75px,8vw,125px) 0}
+.v16-paw-trainer-head{max-width:1150px;display:grid;grid-template-columns:1fr .65fr;gap:25px 60px;align-items:end;margin-bottom:45px}
+.v16-paw-trainer-head>.v10-kicker{grid-column:1/-1;color:#417f5a;font-size:11px;letter-spacing:.15em}
+.v16-paw-trainer-head h2{font:400 clamp(44px,5.1vw,84px)/1.07 var(--v10-serif);letter-spacing:-.057em;margin:0}
+.v16-paw-trainer-head h2 em{color:#ac7946}
+.v16-paw-trainer-head>p:not(.v10-kicker){font-size:14px;color:#51705b;line-height:1.85;max-width:490px}
+.v16-paw-trainer-grid{display:grid;grid-template-columns:1.05fr .9fr;gap:clamp(20px,4vw,64px);align-items:center}
+.v16-paw-lesson{border:1px solid #8faf94;background:#fffdf1;border-radius:20px;box-shadow:0 24px 60px #3659412e;overflow:hidden}
+.v16-paw-lesson-top{display:flex;justify-content:space-between;gap:20px;padding:17px 22px;background:#154b35;color:#f9efcf;font-size:10px;font-weight:750;letter-spacing:.1em}
+.v16-paw-lesson-main{padding:clamp(22px,3vw,47px)}
+.v16-paw-lesson-kicker{font-size:10px;letter-spacing:.15em;color:#619271;font-weight:760}
+.v16-paw-lesson-main h3{font:400 clamp(32px,4vw,62px)/1.1 var(--v10-serif);letter-spacing:-.06em;margin:13px 0 15px;min-height:75px;color:#204b34}
+.v16-paw-lesson-main>p{font-size:14px;min-height:55px;line-height:1.8;color:#5a715e}
+.v16-paw-lesson-progress{display:flex;align-items:center;gap:18px;margin:28px 0 20px}
+.v16-paw-lesson-progress>div{height:12px;border-radius:20px;background:#d7e7d5;flex:1;overflow:hidden}
+.v16-paw-lesson-progress i{height:100%;display:block;background:linear-gradient(90deg,#3b9c6b,#9ebd73);border-radius:20px;transition:width .4s}
+.v16-paw-lesson-progress>span{color:#30664b;font-size:12px;font-weight:800}
+.v16-paw-trainer-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:9px;margin-bottom:28px}
+.v16-paw-trainer-steps span{display:grid;place-items:center;aspect-ratio:1;width:min(100%,47px);border-radius:50%;border:1px solid #aec6ad;background:#edf4e9;color:#6a8d72;font-weight:800;font-size:13px;transition:background .3s,color .3s}
+.v16-paw-trainer-steps span.is-current{background:#e3c084;border-color:#c59f5c;color:#285339;box-shadow:0 6px 17px #be9a6b50}
+.v16-paw-trainer-steps span.is-done{background:#4a9b70;color:#fff9e9;border-color:#4a9b70}
+.v16-paw-lesson-actions{display:flex;flex-wrap:wrap;gap:9px}
+.v16-paw-lesson-actions button{border:1px solid #7ca286;background:#eff5e9;color:#1d5439;border-radius:50px;padding:13px 19px;font-size:12px;font-weight:800;cursor:pointer;transition:transform .25s,background .25s}
+.v16-paw-lesson-actions button[data-v16-trainer=next]{background:#19563b;color:#ffeed0;border-color:#19563b}
+.v16-paw-lesson-actions button:hover:not(:disabled){transform:translateY(-3px);background:#d3e6cd}
+.v16-paw-lesson-actions button[data-v16-trainer=next]:hover:not(:disabled){background:#2b7952}
+.v16-paw-lesson-actions button:disabled{opacity:.45;cursor:not-allowed}
+.v16-paw-lesson-actions button:focus-visible{outline:3px solid #d3a962;outline-offset:3px}
+.v16-paw-lesson-foot{display:flex;flex-wrap:wrap;gap:12px;background:#dbead6;padding:15px 20px;color:#54735b;font-size:10px}
+.v16-paw-trainer-art{position:relative;min-height:440px;display:grid;place-items:center;isolation:isolate}
+.v16-paw-trainer-art:before{content:"";position:absolute;inset:4%;z-index:-1;border:2px solid #afbc9180;border-radius:50%;transform:rotate(-20deg);box-shadow:0 0 35px #c0d4a15a}
+.v16-paw-trainer-art img{width:min(440px,92%);height:430px;object-fit:cover;object-position:center 35%;border-radius:53% 53% 19% 19%;mask-image:linear-gradient(#000 3% 72%,transparent 96%);filter:drop-shadow(0 23px 45px #284d3444)}
+.v16-paw-art-note{position:absolute;z-index:2;bottom:0;right:0;background:#134932e9;color:#f7f0df;border:1px solid #d8b978c2;border-radius:12px;padding:20px 23px;display:flex;flex-direction:column;gap:7px;box-shadow:0 16px 42px #143a2a60}
+.v16-paw-art-note span{font-size:9px;color:#f5c989;letter-spacing:.17em}
+.v16-paw-art-note strong{font:400 25px var(--v10-serif)}
+.v16-paw-art-note small{font-size:10px;color:#d9e5d0}
+@media(max-width:870px){
+ .v16-paw-trainer-head,.v16-paw-trainer-grid{grid-template-columns:1fr}
+ .v16-paw-trainer-art{min-height:330px;order:-1}
+ .v16-paw-trainer-art img{height:340px;width:310px}
+ .v16-paw-trainer-grid{gap:18px}
+}
+@media(max-width:520px){
+ .v16-paw-trainer{padding-block:65px}
+ .v16-paw-trainer-head{margin-bottom:20px}
+ .v16-paw-trainer-head h2{font-size:48px}
+ .v16-paw-trainer-art{min-height:270px}
+ .v16-paw-trainer-art img{height:300px;width:260px}
+ .v16-paw-art-note{right:-5px;bottom:0;padding:12px 14px;max-width:70%}
+ .v16-paw-art-note strong{font-size:18px}
+ .v16-paw-lesson-main h3{min-height:85px;font-size:36px}
+ .v16-paw-lesson-main>p{min-height:75px}
+ .v16-paw-lesson-actions button{padding:11px 13px;font-size:11px}
+}
+@media(prefers-reduced-motion:reduce){
+ .v16-paw-lesson-progress i,.v16-paw-trainer-steps span,.v16-paw-lesson-actions button{transition:none!important}
+}
+
+
+/* Owner visual QA correction: HTML img height=900 must not turn the ten brand selectors
+   into 900px-tall strips. Always size each selector thumbnail explicitly. */
+.v16-brand-section{scroll-margin-top:86px}
+.v16-brand-section .v15-brand-pills.v16-brand-selector>button{
+ height:163px;max-height:163px;min-height:0;overflow:hidden;align-self:stretch;
+ justify-content:flex-start;
+}
+.v16-brand-section .v15-brand-pills.v16-brand-selector>button img{
+ display:block;flex:0 0 86px;min-height:0;max-height:86px;
+ height:86px!important;width:100%!important;aspect-ratio:auto!important;
+ object-fit:cover;object-position:center 7%;
+}
+.v16-brand-section .v15-brand-pills.v16-brand-selector>button strong{
+ display:block;min-height:25px;white-space:normal;max-width:100%;line-height:1.1;
+}
+.v16-brand-section .v15-brand-pills.v16-brand-selector>button small{
+ margin-top:auto;font-size:8px;line-height:1.2;
+}
+.v16-paw-trainer-art img{width:min(330px,85%);height:360px}
+@media(max-width:650px){
+ .v16-brand-section .v15-brand-pills.v16-brand-selector>button{height:147px;max-height:147px;flex-basis:110px}
+ .v16-brand-section .v15-brand-pills.v16-brand-selector>button img{height:76px!important;max-height:76px;flex-basis:76px}
+ .v16-paw-trainer-art img{width:260px;height:305px}
+}

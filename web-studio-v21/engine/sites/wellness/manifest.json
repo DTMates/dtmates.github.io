@@ -1,0 +1,33 @@
+{
+  "schema_version": 3,
+  "pages": [
+    "index.html",
+    "treatments/index.html",
+    "treatments/relaxation/index.html",
+    "treatments/back-neck/index.html",
+    "treatments/voucher/index.html",
+    "studio/index.html",
+    "pricing/index.html",
+    "book/index.html",
+    "booking/index.html",
+    "en/index.html",
+    "en/treatments/index.html",
+    "en/treatments/relaxation/index.html",
+    "en/treatments/back-neck/index.html",
+    "en/treatments/voucher/index.html",
+    "en/studio/index.html",
+    "en/pricing/index.html",
+    "en/book/index.html",
+    "en/booking/index.html",
+    "ar/index.html",
+    "ar/treatments/index.html",
+    "ar/treatments/relaxation/index.html",
+    "ar/treatments/back-neck/index.html",
+    "ar/treatments/voucher/index.html",
+    "ar/studio/index.html",
+    "ar/pricing/index.html",
+    "ar/book/index.html",
+    "ar/booking/index.html"
+  ],
+  "missing": []
+}

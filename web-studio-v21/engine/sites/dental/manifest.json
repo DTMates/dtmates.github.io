@@ -1,0 +1,27 @@
+{
+  "schema_version": 3,
+  "pages": [
+    "index.html",
+    "treatments/index.html",
+    "treatments/first-visit/index.html",
+    "treatments/prevention/index.html",
+    "treatments/hygiene/index.html",
+    "team/index.html",
+    "contact/index.html",
+    "en/index.html",
+    "en/treatments/index.html",
+    "en/treatments/first-visit/index.html",
+    "en/treatments/prevention/index.html",
+    "en/treatments/hygiene/index.html",
+    "en/team/index.html",
+    "en/contact/index.html",
+    "ar/index.html",
+    "ar/treatments/index.html",
+    "ar/treatments/first-visit/index.html",
+    "ar/treatments/prevention/index.html",
+    "ar/treatments/hygiene/index.html",
+    "ar/team/index.html",
+    "ar/contact/index.html"
+  ],
+  "missing": []
+}

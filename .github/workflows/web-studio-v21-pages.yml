@@ -1,0 +1,50 @@
+name: Publish Web Studio V21
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'web-studio-v21/**'
+      - '.github/workflows/web-studio-v21-pages.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify all V21 hashes and protected public routes
+        run: |
+          test -s app-ads.txt
+          test -s web-studio-v20/index.html
+          node --input-type=module <<'JS'
+          import {readFile} from 'node:fs/promises';
+          import {createHash} from 'node:crypto';
+          const manifest=JSON.parse(await readFile('web-studio-v21/manifest.json'));
+          for(const file of manifest.files){const data=await readFile('web-studio-v21/'+file.path);if(createHash('sha256').update(data).digest('hex')!==file.sha256)throw Error(file.path);}
+          console.log(manifest.files.length+' matching public files');
+          JS
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - uses: actions/deploy-pages@v4
+        id: deployment
+      - name: Verify deployed V21, V20 and app-ads over HTTPS
+        run: |
+          set -eu
+          BASE=https://dtmates.github.io/web-studio-v21
+          for route in / /projects.html /builder.html /services.html /pricing.html /delivery.html /process.html /contact.html /privacy.html /case/timo.html /case/agile.html /case/pawmaster.html /studio.css /studio.js /editor.js /manifest.json /provenance.json /media/paw/down-1.webp /engine/assets/evidence/timo-concept-home-desktop.jpg; do
+            curl -fsSL --retry 8 --retry-all-errors --retry-delay 5 --max-time 30 "$BASE$route" >/dev/null
+          done
+          for site in cafe blackline hotel wellness realty electric dental bloom timo signal; do curl -fsSL "$BASE/engine/sites/$site/" >/dev/null; done
+          curl -fsSL https://dtmates.github.io/web-studio-v20/ >/dev/null
+          curl -fsSL https://dtmates.github.io/app-ads.txt >/dev/null
