@@ -1,0 +1,40 @@
+.bloom-v9 .bloom-hero{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));grid-template-rows:auto auto auto;gap:0;align-items:end;position:relative;isolation:isolate;padding:clamp(1.1rem,5vw,5rem);background:#f0dfae}
+.bloom-opening-head{grid-column:1/8;grid-row:1;z-index:2;pointer-events:none}
+.bloom-v9 .bloom-hero h1{font-size:clamp(3rem,9.7vw,10rem);max-width:12ch;line-height:.86}
+.bloom-v9 .bloom-hero .bloom-main-stem{grid-column:5/10;grid-row:1/4;align-self:end;z-index:-1}
+.bloom-v9 .bloom-hero .bloom-side-stem{grid-column:1/3;grid-row:2;z-index:1;max-width:10rem}
+.bloom-hero .bloom-side-stem img{border-radius:50%;rotate:7deg}
+.bloom-v9 .bloom-hero .bloom-main-stem img{aspect-ratio:1;rotate:4deg}
+.bloom-front-actions{grid-column:1/6;grid-row:3;display:flex;flex-wrap:wrap;gap:.5rem;padding-top:1rem}
+.bloom-front-actions a{background:#402853;color:#fff5df;padding:.55rem .85rem;min-height:2.75rem;text-decoration:none;display:inline-flex;align-items:center}
+.bloom-v9 .bloom-product{border-block-start:4px dashed #84679b}
+.bloom-v9 .bloom-workshop-photos{border-block:5px double #76528d}
+@media(max-width:620px){
+ .bloom-v9 .bloom-hero .bloom-main-stem{grid-column:3/10;grid-row:2}
+ .bloom-opening-head{grid-column:1/-1}
+ .bloom-front-actions{grid-column:1/-1}
+ .bloom-v9 .bloom-hero .bloom-side-stem{grid-column:1/3}
+}
+@media(min-width:621px){.bloom-opening-head{grid-column:1/6}.bloom-v9 .bloom-hero h1{font-size:clamp(3rem,8vw,9rem)}}
+
+.bloom-v9 .bloom-stem-catalogue article {border-block-end:1px solid #9c7264}
+.bloom-v9 .bloom-stem-catalogue article:nth-of-type(even) img {border-radius:48% 48% .15rem .15rem}
+.bloom-v9 .bloom-care-note {display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1fr) auto;gap:.75rem 1.5rem;align-items:center;background:#f4ddab}
+.bloom-v9 .bloom-care-note h2 {margin:0}
+.bloom-v9 .bloom-order-board,.bloom-v9 .bloom-table {display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(1rem,4vw,3.5rem);align-items:start}
+.bloom-order-board aside {border:2px solid #6f3e48;padding:1.2rem}
+.bloom-table figure {margin:0;transform:rotate(-2deg)}
+.bloom-table img {display:block;width:100%;height:auto;aspect-ratio:1.45;object-fit:cover}
+.bloom-table figcaption {padding:.45rem}
+@media(max-width:700px){
+ .bloom-v9 .bloom-care-note,.bloom-v9 .bloom-order-board,.bloom-v9 .bloom-table{grid-template-columns:minmax(0,1fr)}
+ .bloom-table figure {transform:none}
+}
+
+.bloom-v9 .bloom-order-board ul {padding:0;list-style:none;margin:0}
+.bloom-v9 .bloom-order-board li {display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:.55rem 1rem;align-items:center;border-block-end:1px solid #9c7264;padding-block:.8rem;margin:0}
+.bloom-order-board li strong {grid-column:1/-1}
+.bloom-order-board li :is(select,button) {min-height:44px}
+.bloom-order-board li bdi {font-variant-numeric:tabular-nums}
+.bloom-order-board li button {justify-self:end}
+@media(max-width:400px){.bloom-v9 .bloom-order-board li{gap:.55rem}}

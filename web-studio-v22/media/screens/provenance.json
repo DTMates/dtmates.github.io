@@ -1,0 +1,305 @@
+{
+  "browser": "145.0.7632.6",
+  "records": [
+    {
+      "path": "media/screens/cafe-desktop.jpg",
+      "kind": "actual working demo browser capture",
+      "url": "https://dtmates.github.io/web-studio-v21/engine/sites/cafe/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "sha256": "2f80a5c6065f32c187777d3fb0f202b8d585e6dd695d2cf1e8fa8943d3c2b096"
+    },
+    {
+      "path": "media/screens/cafe-mobile.jpg",
+      "kind": "actual working demo browser capture",
+      "url": "https://dtmates.github.io/web-studio-v21/engine/sites/cafe/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sha256": "a44a97122772e07406569bccd73328976d8ff1b6cb0aa7eaa706fb5100e5d2a9"
+    },
+    {
+      "path": "media/screens/blackline-desktop.jpg",
+      "kind": "actual working demo browser capture",
+      "url": "https://dtmates.github.io/web-studio-v21/engine/sites/blackline/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "sha256": "d10f04be40c2b8c635594fada42e929835129cf505080d65409df460a9c27fef"
+    },
+    {
+      "path": "media/screens/blackline-mobile.jpg",
+      "kind": "actual working demo browser capture",
+      "url": "https://dtmates.github.io/web-studio-v21/engine/sites/blackline/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sha256": "c90770017f238940b05003aecf190dba216debe8430a3aad3ccc261e418ce96c"
+    },
+    {
+      "path": "media/screens/hotel-desktop.jpg",
+      "kind": "actual working demo browser capture",
+      "url": "https://dtmates.github.io/web-studio-v21/engine/sites/hotel/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "sha256": "d3e8273d4d75573237db7039eda873234c68dfcc59bcc588dc37ca55c775198b"
+    },
+    {
+      "path": "media/screens/hotel-mobile.jpg",
+      "kind": "actual working demo browser capture",
+      "url": "https://dtmates.github.io/web-studio-v21/engine/sites/hotel/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sha256": "823de113417a8c16e97cf625634321140fbc2012f4abc06e43524a04fb7d2f9b"
+    },
+    {
+      "path": "media/screens/wellness-desktop.jpg",
+      "kind": "actual working demo browser capture",
+      "url": "https://dtmates.github.io/web-studio-v21/engine/sites/wellness/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "sha256": "ff01364b3fe3a8a26490f988b40ab1623419dd7c9396db6c0b341b8b509ec648"
+    },
+    {
+      "path": "media/screens/wellness-mobile.jpg",
+      "kind": "actual working demo browser capture",
+      "url": "https://dtmates.github.io/web-studio-v21/engine/sites/wellness/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sha256": "950431be1d5941ef8e514e81f208590e4bdf0f20493c336fd4bd6f10f4d56727"
+    },
+    {
+      "path": "media/screens/realty-desktop.jpg",
+      "kind": "actual working demo browser capture",
+      "url": "https://dtmates.github.io/web-studio-v21/engine/sites/realty/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "sha256": "b39198eead40d1fdcf3e60c6d1b2ff1b203d8bc80a88d01cb2b0024de72cf4c4"
+    },
+    {
+      "path": "media/screens/realty-mobile.jpg",
+      "kind": "actual working demo browser capture",
+      "url": "https://dtmates.github.io/web-studio-v21/engine/sites/realty/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sha256": "7419a69d670dbb4f2ad8892d09fc0de2e4800d1a004ce6b9e470c355ffbb8d8d"
+    },
+    {
+      "path": "media/screens/electric-desktop.jpg",
+      "kind": "actual working demo browser capture",
+      "url": "https://dtmates.github.io/web-studio-v21/engine/sites/electric/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "sha256": "1d0e238517fbb50a028ace09915add2dbc14e2cb338bacf74ce6955b21cd1f8d"
+    },
+    {
+      "path": "media/screens/electric-mobile.jpg",
+      "kind": "actual working demo browser capture",
+      "url": "https://dtmates.github.io/web-studio-v21/engine/sites/electric/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sha256": "f72f9849aabd80ccfaf7902b27a90059791d2196537e02bc10911a83f6f5eaef"
+    },
+    {
+      "path": "media/screens/dental-desktop.jpg",
+      "kind": "actual working demo browser capture",
+      "url": "https://dtmates.github.io/web-studio-v21/engine/sites/dental/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "sha256": "9f414afeffe2f51ad863311800865bd2114a3522078f0f382e2bc813cb06e359"
+    },
+    {
+      "path": "media/screens/dental-mobile.jpg",
+      "kind": "actual working demo browser capture",
+      "url": "https://dtmates.github.io/web-studio-v21/engine/sites/dental/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sha256": "74b4e51eda8129b26022073b1efa1ed48933bc4e27298499b7299b77dcd515e8"
+    },
+    {
+      "path": "media/screens/bloom-desktop.jpg",
+      "kind": "actual working demo browser capture",
+      "url": "https://dtmates.github.io/web-studio-v21/engine/sites/bloom/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "sha256": "7c1c9dfcc93d3cc2f51af3ccc3d9c695725c35fee929e3b3d7484abf47bd0cdd"
+    },
+    {
+      "path": "media/screens/bloom-mobile.jpg",
+      "kind": "actual working demo browser capture",
+      "url": "https://dtmates.github.io/web-studio-v21/engine/sites/bloom/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sha256": "47f9501a640e8a9784a69e67364b24311579032c489a3845b5ad9dda73f979c4"
+    },
+    {
+      "path": "media/screens/timo-desktop.jpg",
+      "kind": "actual working demo browser capture",
+      "url": "https://dtmates.github.io/web-studio-v21/engine/sites/timo/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "sha256": "f6089869b7f6548407b28e96a9de896ab78c9e46bb0156af07601062debc69f1"
+    },
+    {
+      "path": "media/screens/timo-mobile.jpg",
+      "kind": "actual working demo browser capture",
+      "url": "https://dtmates.github.io/web-studio-v21/engine/sites/timo/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sha256": "c06b0bd2c4f414982977eb41fe5ddea502afeabb0270cdb1c06d394aa33fd178"
+    },
+    {
+      "path": "media/screens/signal-desktop.jpg",
+      "kind": "actual working demo browser capture",
+      "url": "https://dtmates.github.io/web-studio-v21/engine/sites/signal/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "sha256": "7e91cb148b359f79007f6b68d5d9546962a7ba5667b087539e96bda945520302"
+    },
+    {
+      "path": "media/screens/signal-mobile.jpg",
+      "kind": "actual working demo browser capture",
+      "url": "https://dtmates.github.io/web-studio-v21/engine/sites/signal/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sha256": "2d9e114f7cf31051497d76bc8fc409940ca3d7df0e67e8fd3c4a10d8150bf81c"
+    },
+    {
+      "path": "media/screens/timo-catalogue.jpg",
+      "kind": "actual owned demonstration or technical case browser capture; not an official business website or APK",
+      "url": "https://dtmates.github.io/web-studio-v21/engine/sites/timo/collections/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "sha256": "a0f5a3baa1063f6d73e093e2066282edbb86960beb47bf1b26c88feda3f24909"
+    },
+    {
+      "path": "media/screens/timo-product.jpg",
+      "kind": "actual owned demonstration or technical case browser capture; not an official business website or APK",
+      "url": "https://dtmates.github.io/web-studio-v21/engine/sites/timo/products/swim/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sha256": "1693168354f40f32be22bf66ed35b5165c844eed374f18471cc5347f880d376c"
+    },
+    {
+      "path": "media/screens/agile-desktop.jpg",
+      "kind": "actual owned demonstration or technical case browser capture; not an official business website or APK",
+      "url": "https://dtmates.github.io/web-studio-v21/engine/work/agile-europe/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "sha256": "2e6f8c30ecd7c2cc3b6f1d56326b0f9a1771988b6da4d5287bb60a7da80d81dc"
+    },
+    {
+      "path": "media/screens/agile-mobile.jpg",
+      "kind": "actual owned demonstration or technical case browser capture; not an official business website or APK",
+      "url": "https://dtmates.github.io/web-studio-v21/engine/work/agile-europe/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sha256": "39e921d2264f31a93687739a999721e2be6426cd476df449e5b94ec043a5d2dd"
+    },
+    {
+      "path": "media/screens/cafe-thumb.jpg",
+      "kind": "resized actual browser capture",
+      "derivedFrom": "media/screens/cafe-desktop.jpg",
+      "sha256": "46b09befeaca6653c99d9a62e1b5fd54c5271de0e5d9ae1b95ab50f8e45c34a5"
+    },
+    {
+      "path": "media/screens/blackline-thumb.jpg",
+      "kind": "resized actual browser capture",
+      "derivedFrom": "media/screens/blackline-desktop.jpg",
+      "sha256": "3f3943d2e5ef1558caa498b210f0ea8f7addd0de743344449439d6098e5449e2"
+    },
+    {
+      "path": "media/screens/hotel-thumb.jpg",
+      "kind": "resized actual browser capture",
+      "derivedFrom": "media/screens/hotel-desktop.jpg",
+      "sha256": "b77c61c578cbe7f69deb4e2a112a31c9cdfde048cafbd87a47045c9c60e70b1e"
+    },
+    {
+      "path": "media/screens/wellness-thumb.jpg",
+      "kind": "resized actual browser capture",
+      "derivedFrom": "media/screens/wellness-desktop.jpg",
+      "sha256": "d717797490a9beedac127798aec89c2b000bd80bd6f4dabc4455d68469734ec1"
+    },
+    {
+      "path": "media/screens/realty-thumb.jpg",
+      "kind": "resized actual browser capture",
+      "derivedFrom": "media/screens/realty-desktop.jpg",
+      "sha256": "3d5b39f6e8f94740042f24e6dd705143c261aa6d795867bf1712251531b98ff5"
+    },
+    {
+      "path": "media/screens/electric-thumb.jpg",
+      "kind": "resized actual browser capture",
+      "derivedFrom": "media/screens/electric-desktop.jpg",
+      "sha256": "1a1118ccec927d96542ca3154dfa586c3a644bfe7a4c0456ace7b96ea5825944"
+    },
+    {
+      "path": "media/screens/dental-thumb.jpg",
+      "kind": "resized actual browser capture",
+      "derivedFrom": "media/screens/dental-desktop.jpg",
+      "sha256": "75b1935509ce7adec110463106f7be563a72ab9b3e8b7464c8538c94f39056b1"
+    },
+    {
+      "path": "media/screens/bloom-thumb.jpg",
+      "kind": "resized actual browser capture",
+      "derivedFrom": "media/screens/bloom-desktop.jpg",
+      "sha256": "8736efe28105f9a6434140f8127d5c7bf8a32d0f5bacc526b25b3ce23e2f53d7"
+    },
+    {
+      "path": "media/screens/timo-thumb.jpg",
+      "kind": "resized actual browser capture",
+      "derivedFrom": "media/screens/timo-desktop.jpg",
+      "sha256": "aabe546460e71f0bc6219e4b63f216d789812ec16493805a65bf69c391f46c37"
+    },
+    {
+      "path": "media/screens/signal-thumb.jpg",
+      "kind": "resized actual browser capture",
+      "derivedFrom": "media/screens/signal-desktop.jpg",
+      "sha256": "13cd9247ef81a9ded3a68ee21d4f5840a285a99e5f310d542572b7358f6372c0"
+    }
+  ]
+}

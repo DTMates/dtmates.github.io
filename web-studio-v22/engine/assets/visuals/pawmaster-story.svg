@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 720" role="img" aria-labelledby="title desc">
+<title id="title">PawMaster product concept illustration</title><desc id="desc">Original illustrative composition of a dog training app interface. Not a captured screenshot from PawMaster.</desc>
+<defs><linearGradient id="back" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#d8ecdf"/><stop offset="1" stop-color="#87bda3"/></linearGradient><linearGradient id="phone" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#234c42"/><stop offset="1" stop-color="#0b2924"/></linearGradient><linearGradient id="card" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fffef7"/><stop offset="1" stop-color="#f3eee2"/></linearGradient></defs>
+<rect width="1040" height="720" fill="url(#back)"/><circle cx="230" cy="180" r="260" fill="#f3f8e8" opacity=".58"/><circle cx="760" cy="660" r="300" fill="#3f8f71" opacity=".25"/>
+<g fill="#2d7c64" opacity=".16"><circle cx="104" cy="495" r="23"/><circle cx="142" cy="474" r="16"/><circle cx="169" cy="499" r="18"/><path d="M102 529c-5-34 57-38 66 0 7 33-9 46-34 34-17-8-28-11-32-34"/></g>
+<g transform="translate(235 48) rotate(-7 230 315)">
+<rect x="0" y="0" width="462" height="650" rx="49" fill="#0f2c27"/><rect x="13" y="13" width="436" height="624" rx="39" fill="url(#phone)"/>
+<rect x="151" y="15" width="160" height="29" rx="16" fill="#092019"/>
+<text x="51" y="88" fill="#acd8c1" font-size="18" font-family="Arial, sans-serif" letter-spacing="2">PAWMASTER</text>
+<text x="51" y="138" fill="#ffffff" font-size="40" font-weight="700" font-family="Arial, sans-serif">Good morning!</text>
+<rect x="35" y="167" width="392" height="234" rx="27" fill="url(#card)"/>
+<circle cx="119" cy="247" r="55" fill="#e5c19b"/><path d="M82 213q-36-36-38 29l34 20M145 212q41-26 34 27l-33 21" fill="#b88755"/><ellipse cx="113" cy="254" rx="43" ry="46" fill="#c69a6b"/><circle cx="99" cy="248" r="4"/><circle cx="130" cy="248" r="4"/><ellipse cx="115" cy="271" rx="9" ry="6" fill="#513926"/>
+<text x="195" y="225" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#153d32">Bella's journey</text>
+<text x="195" y="252" font-family="Arial, sans-serif" font-size="15" fill="#58746b">Training companion</text>
+<rect x="194" y="280" width="189" height="10" rx="5" fill="#dbe7d7"/><rect x="194" y="280" width="127" height="10" rx="5" fill="#3b9a79"/>
+<text x="195" y="324" font-size="16" font-family="Arial, sans-serif" fill="#386858">8 / 15 skills</text>
+<rect x="35" y="425" width="188" height="135" rx="22" fill="#275a4b"/><rect x="240" y="425" width="187" height="135" rx="22" fill="#275a4b"/>
+<text x="58" y="463" font-family="Arial, sans-serif" font-size="16" fill="#c4e3ce">TODAY</text><text x="58" y="501" font-family="Arial, sans-serif" font-size="29" fill="#fff">Stay</text>
+<text x="262" y="463" font-family="Arial, sans-serif" font-size="16" fill="#c4e3ce">PROGRESS</text><text x="262" y="501" font-family="Arial, sans-serif" font-size="29" fill="#fff">53%</text>
+<rect x="45" y="583" width="372" height="35" rx="17" fill="#e3c38b"/><text x="231" y="605" font-family="Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="700" fill="#193f31">CONTINUE TRAINING</text>
+</g>
+<g><rect x="668" y="154" width="293" height="136" rx="23" fill="#fefbf1" stroke="#9ac5b2"/><text x="701" y="197" font-family="Arial, sans-serif" font-size="15" fill="#3b816a">TRAINING PROGRESS</text><text x="702" y="246" font-family="Arial, sans-serif" font-size="35" font-weight="700" fill="#193f32">8 / 15</text><circle cx="888" cy="227" r="40" fill="none" stroke="#d7eadf" stroke-width="12"/><circle cx="888" cy="227" r="40" fill="none" stroke="#469e7b" stroke-width="12" stroke-linecap="round" stroke-dasharray="133 252" transform="rotate(-90 888 227)"/></g>
+<g><rect x="694" y="337" width="298" height="112" rx="23" fill="#163f33"/><text x="719" y="377" font-family="Arial, sans-serif" font-size="15" fill="#c7d8bd">PERSONAL PROFILES</text><text x="719" y="414" font-family="Arial, sans-serif" font-size="25" fill="#fff">Plans that grow</text></g>
+<text x="30" y="684" fill="#275645" font-family="Arial, sans-serif" font-size="16" letter-spacing="1">ORIGINAL EXPLANATORY VISUAL · NOT AN APP SCREENSHOT</text>
+</svg>

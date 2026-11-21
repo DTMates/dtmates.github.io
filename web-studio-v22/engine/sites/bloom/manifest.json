@@ -1,0 +1,33 @@
+{
+  "schema_version": 3,
+  "pages": [
+    "index.html",
+    "bouquets/index.html",
+    "bouquets/seasonal/index.html",
+    "bouquets/wild/index.html",
+    "bouquets/gift/index.html",
+    "studio/index.html",
+    "bag/index.html",
+    "workshops/index.html",
+    "contact/index.html",
+    "en/index.html",
+    "en/bouquets/index.html",
+    "en/bouquets/seasonal/index.html",
+    "en/bouquets/wild/index.html",
+    "en/bouquets/gift/index.html",
+    "en/studio/index.html",
+    "en/bag/index.html",
+    "en/workshops/index.html",
+    "en/contact/index.html",
+    "ar/index.html",
+    "ar/bouquets/index.html",
+    "ar/bouquets/seasonal/index.html",
+    "ar/bouquets/wild/index.html",
+    "ar/bouquets/gift/index.html",
+    "ar/studio/index.html",
+    "ar/bag/index.html",
+    "ar/workshops/index.html",
+    "ar/contact/index.html"
+  ],
+  "missing": []
+}

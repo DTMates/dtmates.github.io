@@ -1,0 +1,27 @@
+{
+  "schema_version": 3,
+  "pages": [
+    "index.html",
+    "rooms/index.html",
+    "rooms/courtyard/index.html",
+    "rooms/attic/index.html",
+    "rooms/salon/index.html",
+    "experiences/index.html",
+    "contact/index.html",
+    "en/index.html",
+    "en/rooms/index.html",
+    "en/rooms/courtyard/index.html",
+    "en/rooms/attic/index.html",
+    "en/rooms/salon/index.html",
+    "en/experiences/index.html",
+    "en/contact/index.html",
+    "ar/index.html",
+    "ar/rooms/index.html",
+    "ar/rooms/courtyard/index.html",
+    "ar/rooms/attic/index.html",
+    "ar/rooms/salon/index.html",
+    "ar/experiences/index.html",
+    "ar/contact/index.html"
+  ],
+  "missing": []
+}
