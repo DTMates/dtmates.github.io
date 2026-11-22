@@ -1,0 +1,211 @@
+.misto .misto-hero{grid-template-columns:minmax(0,2.8fr) minmax(12rem,1fr);gap:1rem 2vw;padding-block:1.5rem 3rem}
+.misto .misto-lead{grid-column:1/-1;border-block:4px double currentColor;padding-block:1.25rem}
+.misto .misto-hero .misto-lead h1{font-size:clamp(2.8rem,8.3vw,8.5rem);max-width:16ch;margin:.12em 0}
+.misto .misto-hero figure{margin:0;rotate:0;box-shadow:none;border:0;padding:0}
+.misto .misto-hero .campaign-picture{aspect-ratio:2.15;box-shadow:none;border:0}
+.misto-visit-ledger{align-self:stretch;padding:1rem 1rem .4rem;border-inline-start:1px solid #957f69}
+.misto-visit-ledger h2{font-size:clamp(1.35rem,2.6vw,2.3rem)}
+.misto .misto-paper{border:0;border-block-start:6px double #a28165;box-shadow:none}
+.misto .misto-story{border-block-end:4px double #a28165}
+.misto .misto-visit section{border-block-start:3px double #8e6c54}
+.misto .misto-foot{border-top:6px double #c6a589}
+@media(max-width:640px){
+ .misto .misto-hero{grid-template-columns:minmax(0,1fr);gap:.65rem;padding-block:.65rem 1.35rem}
+ .misto .misto-hero .campaign-picture{aspect-ratio:1.45}
+ .misto-visit-ledger{grid-row:2;border-inline-start:0;padding:.55rem 0;border-block-end:1px solid #957f69}
+ .misto-visit-ledger :is(h2,.misto-hours){display:none}
+}
+
+.misto {
+  --misto-rule: #947a5e;
+  --misto-green: #26392e;
+  --misto-light: #fff7e9;
+}
+.misto-head [aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: .35em;
+}
+.misto :is(.misto-menu-page,.misto-story-page,.misto-visit-page) {
+  width: min(92%, 77rem);
+  margin-inline: auto;
+  padding-block: clamp(2rem,6vw,6rem);
+}
+.misto :is(.misto-menu-title,.misto-story-title,.misto-visit-page>header) h1 {
+  font-size: clamp(2.55rem,8vw,6.5rem);
+  line-height: 1.05;
+  margin-block: .18em .25em;
+  overflow-wrap: anywhere;
+}
+.misto :is(.misto-menu-title,.misto-story-title,.misto-visit-page>header)>p:last-child {
+  font-size: clamp(1rem,2.2vw,1.35rem);
+  max-width: 40ch;
+}
+.misto-menu-title {
+  border-block-start: 4px double var(--misto-rule);
+  padding-block-start: 1.1rem;
+}
+.misto-menu-sheet {
+  background: var(--misto-light);
+  border: 1px solid var(--misto-rule);
+  padding: clamp(1rem,4vw,3.5rem);
+  margin-block: 1.5rem;
+}
+.misto-menu-sheet .misto-filters {
+  display: grid;
+  grid-template-columns: minmax(0,2fr) minmax(0,1fr);
+  gap: .75rem 1.25rem;
+  margin-block: 0 2rem;
+}
+.misto-menu-sheet .misto-filters :is(input,select) {
+  width: 100%;
+  min-height: 44px;
+}
+.misto-menu-groups {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: clamp(1.1rem,4vw,3.75rem);
+}
+.misto-menu-group h2 {
+  margin: 0;
+  padding-block: .45rem;
+  border-block: 3px double var(--misto-rule);
+  font-size: clamp(1.4rem,3vw,2.25rem);
+}
+.misto-menu-group[data-category="bakery"] h2 {background: #ecdabc}
+.misto-menu-group[data-category="coffee"] h2 {border-block-start-width: 5px}
+.misto-menu-group .misto-menu-items {margin: 0}
+.misto-menu-group .misto-menu-items dt {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) auto;
+  gap: .6rem;
+}
+.misto-menu-group .misto-menu-items dt span {font-variant-numeric: tabular-nums}
+.misto-menu-note {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) minmax(7rem,.34fr);
+  gap: 1rem;
+  align-items: center;
+  border-block-end: 4px double var(--misto-rule);
+  padding-block: .75rem 1.5rem;
+}
+.misto-menu-note img {width: 100%;aspect-ratio: 1.55;object-fit: cover}
+.misto-story-page {
+  display: grid;
+  grid-template-columns: minmax(0,.78fr) minmax(0,1.6fr);
+  gap: clamp(1rem,4vw,4rem);
+  align-items: start;
+}
+.misto-story-title {padding-block: 1rem;border-block: 4px double var(--misto-rule)}
+.misto-story-page figure {margin: 0}
+.misto-story-page figcaption {font-size: .85rem;padding-block: .35rem}
+.misto-story-cover img {width: 100%;height: auto;display: block}
+.misto-story-spread,.misto-story-window {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: minmax(0,1.25fr) minmax(0,.85fr);
+  gap: clamp(1rem,6vw,6rem);
+  align-items: center;
+  padding-block: clamp(1rem,4vw,3.5rem);
+  border-block-start: 1px solid var(--misto-rule);
+}
+.misto-story-spread p,.misto-story-window p {max-width: 53ch}
+.misto-story-spread img,.misto-story-window img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.65;
+  object-fit: cover;
+}
+.misto-story-window {grid-template-columns: minmax(0,1fr) minmax(0,1fr)}
+.misto-prose img.misto-bread {width: 100%;aspect-ratio: 1.58;object-position: 60% 58%}
+.misto-visit-page {max-width: 62rem}
+.misto-visit-page>header {border-block-start: 4px double var(--misto-rule);padding-block: 1rem}
+.misto-visit-card {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) minmax(0,1fr);
+  background: var(--misto-green);
+  color: var(--misto-light);
+  padding: clamp(1rem,4vw,3rem);
+  gap: clamp(1rem,5vw,4rem);
+}
+.misto-visit-card section+section {border-inline-start: 1px solid #a5a78c;padding-inline-start: clamp(1rem,3vw,3rem)}
+.misto-visit-card h2 {margin-block: 0 .55rem}
+.misto-visit-card address {font-style: normal}
+.misto-visit-card .misto-hours {max-width: 23rem}
+.misto-directions {
+  display: grid;
+  grid-template-columns: minmax(0,1fr);
+  justify-items: start;
+  margin-block-start: .7rem;
+}
+.misto-directions a {color: inherit;padding-block: .55rem;overflow-wrap: anywhere;min-height: 44px}
+.misto-visit-note,.misto-visit-request {
+  margin-block-start: 1.5rem;
+  border-block-start: 3px double var(--misto-rule);
+  padding-block: .8rem;
+}
+@media (max-width:700px) {
+  .misto-menu-groups,.misto-story-page,.misto-story-spread,.misto-story-window,.misto-visit-card {grid-template-columns: minmax(0,1fr)}
+  .misto-story-window img {grid-row: 2}
+  .misto-visit-card section+section {
+    border-inline-start: 0;
+    border-block-start: 1px solid #a5a78c;
+    padding-inline-start: 0;
+    padding-block-start: 1rem;
+  }
+  .misto-menu-note img {aspect-ratio: 1;max-width: 10rem}
+}
+@media (max-width:390px) {
+  .misto-menu-sheet .misto-filters,.misto-menu-note {grid-template-columns: minmax(0,1fr)}
+}
+.misto-visit-request {padding-block: clamp(1rem,4vw,2.5rem)}
+.misto-visit-request h2 {margin-block: 0 .65rem}
+.misto-request-fields {
+  display: grid;
+  grid-template-columns: minmax(0,.65fr) minmax(0,1fr) minmax(0,1.35fr);
+  gap: 1rem;
+}
+.misto-request-fields label {display: grid;gap: .3rem;font-weight: 600}
+.misto-request-fields input {
+  font: inherit;
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  border: 1px solid var(--misto-rule);
+  background: var(--misto-light);
+  color: inherit;
+  padding: .55rem .65rem;
+}
+.misto-visit-request button {
+  margin-block-start: 1rem;
+  min-height: 44px;
+  padding: .65rem 1rem;
+  color: var(--misto-light);
+  background: var(--misto-green);
+  border: 1px solid var(--misto-green);
+  font: inherit;
+  cursor: pointer;
+}
+.misto-visit-request dl>div {display: flex;flex-wrap: wrap;gap: .35rem 1rem}
+.misto-visit-request dd {margin: 0;overflow-wrap: anywhere}
+@media (max-width:700px) {
+  .misto-request-fields {grid-template-columns: minmax(0,1fr) minmax(0,1.15fr)}
+  .misto-request-fields label:last-child {grid-column: 1/-1}
+}
+@media (max-width:390px) {
+  .misto-menu-note img {width: 100%;max-width: 100%;aspect-ratio: 1.65}
+}
+
+.misto-visit-page .misto-visit-note {
+  display:grid;
+  grid-template-columns:minmax(0,1.1fr) minmax(10rem,.64fr);
+  gap:clamp(1rem,4vw,3rem);
+  align-items:center;
+}
+.misto-visit-note figure {margin:0}
+.misto-visit-note img {display:block;width:100%;height:auto;aspect-ratio:1.65;object-fit:cover;object-position:center 58%}
+.misto-visit-note figcaption {padding-block:.4rem;font-size:.9rem}
+.misto-head .misto-langs a {display:inline-flex;align-items:center;min-height:2.75rem}
+@media(max-width:640px){
+ .misto-visit-page .misto-visit-note {grid-template-columns:minmax(0,1fr)}
+ .misto-visit-note img {aspect-ratio:1.85}
+}

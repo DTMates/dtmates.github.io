@@ -1,0 +1,24 @@
+{
+  "provider": "Official Google Fonts repository google/fonts",
+  "license": "SIL Open Font License 1.1; included verbatim",
+  "files": [
+    {
+      "file": "Roboto-Variable.ttf",
+      "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/roboto/Roboto%5Bwdth,wght%5D.ttf",
+      "bytes": 488584,
+      "sha256": "d7598e12c5dbef095ff8272cfc55da0250bd07fbdecbac8a530b9b277872a134"
+    },
+    {
+      "file": "Roboto-Italic-Variable.ttf",
+      "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/roboto/Roboto-Italic%5Bwdth,wght%5D.ttf",
+      "bytes": 530944,
+      "sha256": "9725a847af6b460ffca162ae66d20dad48b01876137947180b42d7dcd7887182"
+    },
+    {
+      "file": "OFL.txt",
+      "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/roboto/OFL.txt",
+      "bytes": 4394,
+      "sha256": "061402327a96aadb0bfb694a960ed289ecd38d383e396243831ab81feb109c41"
+    }
+  ]
+}

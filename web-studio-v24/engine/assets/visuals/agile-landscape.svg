@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 770" role="img" aria-labelledby="title desc">
+<title id="title">Energy transition landscape</title>
+<desc id="desc">Original illustrative energy landscape with rolling hills and wind turbines. No people or photographic portraits.</desc>
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2=".62" y2="1"><stop stop-color="#244d62"/><stop offset=".4" stop-color="#77a7bb"/><stop offset=".85" stop-color="#d4bf94"/><stop offset="1" stop-color="#d4b483"/></linearGradient>
+<radialGradient id="sun"><stop stop-color="#fbe6bd" stop-opacity=".95"/><stop offset=".4" stop-color="#eec995" stop-opacity=".35"/><stop offset="1" stop-color="#eebc82" stop-opacity="0"/></radialGradient>
+<linearGradient id="foreground" x1="0" x2=".4" y1="0" y2="1"><stop stop-color="#637e5b"/><stop offset=".5" stop-color="#426958"/><stop offset="1" stop-color="#294e49"/></linearGradient>
+<linearGradient id="turbine" x1="0" y1="0" x2="1" y2=".4"><stop stop-color="#f9fcf7"/><stop offset=".55" stop-color="#bcd6d1"/><stop offset="1" stop-color="#688f8b"/></linearGradient>
+<filter id="blur"><feGaussianBlur stdDeviation="16"/></filter>
+<filter id="shadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="3" dy="7" stdDeviation="7" flood-color="#1d3944" flood-opacity=".4"/></filter>
+</defs>
+<rect width="1200" height="770" fill="url(#sky)"/>
+<ellipse cx="814" cy="237" rx="295" ry="240" fill="url(#sun)"/>
+<g opacity=".26" fill="#e7e0c3"><ellipse cx="190" cy="180" rx="150" ry="20" filter="url(#blur)"/><ellipse cx="610" cy="125" rx="130" ry="18" filter="url(#blur)"/></g>
+<path d="M0 432C102 374 182 369 278 415S484 457 593 401s223-54 331-21 202 21 276-16v245H0Z" fill="#77928c" opacity=".74"/>
+<path d="M0 486C149 414 215 448 332 462S544 416 634 431s174 68 282 42 183-54 284-27v220H0Z" fill="#537d75" opacity=".82"/>
+<path d="M0 564C124 491 225 481 372 526c112 33 207 15 304-18 113-38 241-25 332 18 79 37 133 10 192-7v251H0Z" fill="url(#foreground)"/>
+<g opacity=".34"><path d="M0 670C216 604 337 623 523 662s398-30 677-26" stroke="#d8cb91" stroke-width="19" fill="none"/><path d="M0 702C175 657 366 683 562 701s424-21 638-5" stroke="#9baf7c" stroke-width="10" fill="none"/></g>
+<g filter="url(#shadow)">
+<!-- Large foreground turbine -->
+<path d="M792 340l-11 298h22l-8-298" fill="url(#turbine)"/>
+<g transform="translate(793 344)">
+<circle r="13" fill="#d6e4e0"/>
+<path d="M-2 -8C-7 -73 -16 -181 3 -249C14 -249 18 -238 17 -218L12 -10Z" fill="url(#turbine)"/>
+<path d="M10 4C69 28 163 81 206 132c-5 10-19 10-35 0L0 13Z" fill="url(#turbine)"/>
+<path d="M-9 7C-57 44-142 104-207 115c-6-11 3-24 20-34L-1-8Z" fill="url(#turbine)"/>
+<circle r="13" fill="#e8f0e9"/>
+</g>
+<!-- Distant turbines -->
+<g transform="translate(391 395) scale(.57)">
+<path d="M-6 0L-14 275H14L6 0" fill="#c8d8d5"/>
+<g><path d="M-3 0L-8 -176C6 -182 11-171 9-158L8-2Z" fill="#d7e8df"/><path d="M5 3L151 102C149 114 138 117 127 107L-1 12Z" fill="#d7e8df"/><path d="M-8 8L-155 96C-164 88-159 77-146 72L-2-11Z" fill="#d7e8df"/></g><circle r="9" fill="#eff6ec"/>
+</g>
+<g transform="translate(1005 399) scale(.41)">
+<path d="M-5 0L-11 270H11L5 0" fill="#cbdad9"/>
+<g><path d="M-3 -3L-6 -177C7-182 12-173 10-159L6-1Z" fill="#e0ece7"/><path d="M6 3L151 101C147 112 138 113 127 106L-2 10Z" fill="#e0ece7"/><path d="M-8 8L-154 96C-161 85-157 78-145 70L-2-10Z" fill="#e0ece7"/></g><circle r="9" fill="#eff6ec"/>
+</g>
+</g>
+<path d="M0 725c210-88 317-45 445 0 134 46 317-37 438-30 115 6 198 25 317-19v94H0Z" fill="#28524b" opacity=".45"/>
+<g stroke="#d6c59a" opacity=".38"><path d="M42 688l17 39M66 704l-14 48M250 659l5 46M296 685l10 51M937 662l-4 50M1045 684l9 42" stroke-width="2"/></g>
+</svg>

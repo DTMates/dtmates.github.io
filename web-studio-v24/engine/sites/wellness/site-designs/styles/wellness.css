@@ -1,0 +1,38 @@
+.mira .mira-opening{grid-template-columns:minmax(0,1fr) minmax(12rem,.62fr);grid-template-rows:auto auto;text-align:start;max-width:68rem;margin-inline:auto;gap:1.5rem 2.3rem;padding:3rem clamp(1.1rem,5vw,4.5rem)}
+.mira .mira-opening .mira-opening-text{grid-column:1/-1;margin:0;max-width:36rem}
+.mira .mira-opening h1{font-size:clamp(4rem,10vw,9rem);line-height:.92;text-wrap:initial}
+.mira .mira-opening figure{margin:0;max-width:25rem}
+.mira .mira-opening .campaign-picture{height:auto;aspect-ratio:3/4}
+.mira .mira-opening img{border-radius:10rem 10rem .25rem .25rem;aspect-ratio:3/4}
+.mira-ritual-index{display:grid;align-self:start;border-block:1px solid #8e9b87}
+.mira .mira-ritual-index a{background:transparent;color:#29382d;border-block-end:1px solid #b1bdab;border-radius:0;text-decoration:none;padding-inline:0}
+.mira .mira-ritual-index a:last-child{border-block-end:0}
+.mira main>.mira-title{max-width:62rem;margin-inline:auto;text-align:start}
+.mira .mira-list article{border-inline-start:1px solid #b0bba8;padding-inline-start:.7rem}
+.mira .mira-book{border-radius:2.5rem 2.5rem .1rem .1rem}
+@media(max-width:600px){
+ .mira .mira-opening{gap:1.05rem;grid-template-columns:minmax(0,1fr) minmax(0,.85fr);padding-top:2.2rem}
+ .mira .mira-opening figure{min-width:0}.mira .mira-opening img{border-radius:7rem 7rem .15rem .15rem}
+ .mira .mira-ritual-index a{padding-block:.4rem;min-height:2.75rem;overflow-wrap:anywhere;font-size:.84rem}
+}
+
+.mira .mira-ritual-spread,.mira .mira-ritual-notes,.mira .mira-booking-spread {
+ display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(1rem,6vw,5.5rem);align-items:start;
+}
+.mira .mira-ritual-spread .mira-title {padding:0;max-width:100%;text-align:start}
+.mira-ritual-spread figure {margin:0}
+.mira-ritual-spread figure img {display:block;width:100%;height:auto;aspect-ratio:1.2;object-fit:cover;border-radius:45% 45% .2rem .2rem}
+.mira-ritual-spread[data-ritual="back-neck"] figure img {border-radius:0 38% 0 0}
+.mira-ritual-spread[data-ritual="voucher"] figure img {border-radius:0;aspect-ratio:1.45}
+.mira-ritual-spread dl div {border-block:1px solid #9aa995;padding-block:.8rem}
+.mira-ritual-spread dd {margin:0;font-size:1.35rem}
+.mira-ritual-notes {border-block-start:1px solid #9aa995}
+.mira-duration {display:flex;flex-wrap:wrap;gap:.4rem .9rem;font-variant-numeric:tabular-nums}
+.mira-duration bdi+bdi {border-inline-start:1px solid #a4ae9e;padding-inline-start:.9rem}
+.mira-booking-spread aside h2 {margin-top:0}
+.mira .mira-booking-spread form {width:100%;margin:0}
+@media(max-width:700px){
+ .mira .mira-ritual-spread,.mira .mira-ritual-notes,.mira .mira-booking-spread {grid-template-columns:minmax(0,1fr)}
+ .mira-booking-spread aside {grid-row:2}
+ .mira-ritual-spread figure img {max-height:27rem}
+}
