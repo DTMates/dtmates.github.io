@@ -1,0 +1,232 @@
+/* V17 independent demo-site motion grammar — each industry retains its own identity.
+   No rasterized app UI, no third-party fonts and no removal of native flows. */
+.misto .misto-menu-sheet,.misto .misto-visit-ledger{transition:transform .55s cubic-bezier(.22,1,.36,1),box-shadow .55s}
+.misto .misto-menu-sheet:hover{transform:rotate(-.7deg) translateY(-5px);box-shadow:14px 19px 0 #ab92774b}
+.misto .misto-visit-ledger:hover{transform:rotate(0deg) translateY(-3px)}
+.misto .misto-paper{background-attachment:local}
+.blackline .blackline-hero .campaign-picture{transform:translateZ(0)}
+.blackline .blackline-hero .campaign-picture:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(95deg,transparent 0 42%,#d6e95817 49%,transparent 58%);transform:translateX(-100%);transition:transform .85s}
+.blackline .blackline-hero:hover .campaign-picture:after{transform:translateX(100%)}
+.blackline .blackline-service-rail a{transition:letter-spacing .24s}
+.blackline .blackline-service-rail a:hover{letter-spacing:.13em}
+.atelier .atelier-room-directory article,.atelier .atelier-room{transition:filter .7s,box-shadow .6s}
+.atelier .atelier-room-directory article:hover{box-shadow:0 32px 60px #1d3b2834}
+.atelier .atelier-hero .campaign-picture img{object-position:50% 45%}
+.mira .mira-opening .campaign-picture{position:relative;isolation:isolate}
+.mira .mira-opening .campaign-picture:after{content:"";position:absolute;inset:0;border:2px solid #f6f9ec8c;border-radius:inherit;pointer-events:none}
+.mira .mira-ritual-index a:focus-visible{outline:3px solid #5b876a;outline-offset:5px}
+.forma .forma-front-directory .forma-grid article{transition:transform .4s,box-shadow .4s}
+.forma .forma-front-directory .forma-grid article:hover{transform:translateY(-5px);box-shadow:0 18px 40px #1b3c2737}
+.forma .forma-cover .campaign-picture{position:relative}
+.forma .forma-cover .campaign-picture:after{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(90deg,transparent 0 23%,#fff8ec1a 23.1% 23.2%,transparent 23.3% 46%)}
+.volt .volt-lead .campaign-picture{isolation:isolate}
+.volt .volt-lead .campaign-picture:after{content:"";position:absolute;inset:auto 0 0;height:7px;background:repeating-linear-gradient(90deg,#172b3f 0 15px,#f3c13e 15px 30px);opacity:.85}
+.volt .volt-front-index a:hover{background:#f7d16d;color:#152842}
+.nova .nova-faq details{transition:background .25s,border-color .25s}
+.nova .nova-faq details[open]{background:#e0effc;border-color:#4181b5}
+.nova .nova-hero .campaign-picture{position:relative}
+.nova .nova-hero .campaign-picture:after{content:"";position:absolute;inset:0;pointer-events:none;border:2px solid #ffffffa8;border-radius:inherit}
+.bloom-v9 .bloom-main-stem,.bloom-v9 .bloom-side-stem{transition:transform .7s cubic-bezier(.22,1,.36,1)}
+.bloom-v9 .bloom-hero:hover .bloom-main-stem{transform:rotate(0deg) translateY(-5px)}
+.bloom-v9 .bloom-hero:hover .bloom-side-stem{transform:rotate(1deg) translateY(2px)}
+.bloom-v9 .bloom-front-actions a:focus-visible{outline:3px solid #683f7a;outline-offset:4px}
+.v7-store .v7-campaign .campaign-picture img{transition:transform 1.1s,filter .8s}
+.v7-store .v7-campaign:hover .campaign-picture img{filter:saturate(1.12) contrast(1.05);transform:scale(1.025)}
+.v7-store .v7-product a:focus-visible{outline:3px solid #774357;outline-offset:4px}
+.sig .sig-front-console{transition:box-shadow .5s,border-color .5s}
+.sig .sig-front-console:hover{border-color:#6fc0f0;box-shadow:0 43px 100px #0009,0 0 38px #2871b954}
+.sig .sig-front-console nav a{transition:background .25s,color .25s}
+.sig .signal-board{background:linear-gradient(110deg,#e5eef9,#f3f8ff)}
+@media(max-width:650px){
+ .misto .misto-menu-sheet:hover,.misto .misto-visit-ledger:hover{transform:none}
+ .blackline .blackline-hero .campaign-picture:after{display:none}
+ .forma .forma-front-directory .forma-grid article:hover{transform:none}
+ .bloom-v9 .bloom-main-stem,.bloom-v9 .bloom-side-stem{transform:none}
+}
+@media(prefers-reduced-motion:reduce){
+ .misto .misto-menu-sheet,.misto .misto-visit-ledger,
+ .blackline .blackline-hero .campaign-picture:after,.blackline .blackline-service-rail a,
+ .atelier .atelier-room-directory article,.atelier .atelier-room,.forma .forma-front-directory .forma-grid article,
+ .bloom-v9 .bloom-main-stem,.bloom-v9 .bloom-side-stem,.v7-store .v7-campaign .campaign-picture img,
+ .sig .sig-front-console,.sig .sig-front-console nav a{transition:none!important;animation:none!important}
+}
+
+
+/* V17.3: ten source-backed, distinct interactive editorial compositions. */
+.brand18{box-sizing:border-box;isolation:isolate;position:relative;overflow:hidden;max-width:1390px;margin:clamp(36px,7vw,95px) auto;padding:clamp(23px,4vw,62px);color:var(--b18-fg,#28372f);background:var(--b18-bg,#f2e9da)}
+.brand18 *{box-sizing:border-box}.brand18-kicker{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:25px;font:730 10px system-ui;letter-spacing:.15em}
+.brand18-layout{display:grid;grid-template-columns:1.05fr 1fr;align-items:center;gap:clamp(23px,4vw,65px)}
+.brand18-visual{position:relative;min-height:270px;isolation:isolate;overflow:hidden;background:#354a42}
+.brand18-visual img{display:block;width:100%;height:clamp(270px,36vw,480px);object-fit:cover;transition:transform 1.1s cubic-bezier(.22,1,.36,1),filter .8s}
+.brand18-visual:hover img{transform:scale(1.045)}
+.brand18-symbol{position:absolute;right:6%;top:2%;font:400 clamp(55px,9vw,148px) Georgia,serif;color:#fff9;pointer-events:none;animation:b18-drift 8s ease-in-out infinite}
+@keyframes b18-drift{50%{transform:translateY(-13px) rotate(5deg)}}
+.brand18-plate{position:absolute;bottom:14px;left:14px;background:#162a2bdd;color:#fff9ec;padding:11px 14px;font:730 10px system-ui;letter-spacing:.13em}
+.brand18-count{font:760 12px system-ui;letter-spacing:.17em}.brand18-description h2{font:400 clamp(44px,6vw,92px)/.96 Georgia,serif;letter-spacing:-.065em;margin:16px 0 25px}
+.brand18-description>p{font:730 12px system-ui;letter-spacing:.11em}.brand18-selections{display:grid;gap:7px;margin:23px 0}
+.brand18-selections button{min-width:0;display:flex;align-items:center;gap:14px;border:1px solid currentColor;background:transparent;color:inherit;text-align:left;padding:13px 16px;cursor:pointer;transition:background .23s,color .23s,transform .23s}
+.brand18-selections button b{font:700 11px system-ui;opacity:.7}
+.brand18-selections button span{font:720 clamp(12px,1.4vw,17px)/1.3 system-ui}
+.brand18-selections button[aria-pressed=true]{background:var(--b18-active,#294b3c);color:var(--b18-activefg,#fff);transform:translateX(6px)}
+.brand18-selections button:focus-visible{outline:3px solid currentColor;outline-offset:3px}
+.brand18-selection{border-left:4px solid currentColor;padding:16px 18px;display:grid;gap:8px;overflow-wrap:anywhere}
+.brand18-selection small{font:730 10px system-ui;letter-spacing:.12em}
+.brand18-selection strong{font:450 clamp(19px,2.3vw,29px) Georgia,serif}
+.brand18-foot{margin-top:22px;display:flex;flex-direction:column;align-items:start;gap:11px}
+.brand18-foot a{padding:13px 21px;border:1px solid currentColor;color:inherit;text-decoration:none;font:760 12px system-ui}
+.brand18-foot a:hover{transform:translateY(-3px)}.brand18-foot p{max-width:420px;font:11px/1.7 system-ui;opacity:.75}
+.brand18-cafe{--b18-bg:#f4e7ce;--b18-fg:#5c3e2e;--b18-active:#6d482f;border:8px double #d9bf94;box-shadow:15px 17px 0 #ad906155}
+.brand18-cafe .brand18-visual{transform:rotate(-2deg);box-shadow:12px 16px 0 #d5b38c}
+.brand18-cafe h2{font-family:'Young Serif',Georgia,serif}
+.brand18-cafe .brand18-selections button{border:0;border-bottom:1px dashed #ac9278}
+.brand18-blackline{--b18-bg:#101d1b;--b18-fg:#ddf35a;--b18-active:#d8f252;--b18-activefg:#101919;border-top:8px solid #dcf15d}
+.brand18-blackline h2{font:850 clamp(53px,7vw,106px)/.86 'Barlow Condensed',Impact,sans-serif;text-transform:uppercase;letter-spacing:-.04em}
+.brand18-blackline .brand18-selections{grid-template-columns:repeat(3,minmax(0,1fr))}
+.brand18-blackline .brand18-selections button{flex-direction:column;align-items:start;min-height:100px}
+.brand18-blackline .brand18-selections button[aria-pressed=true]{transform:translateY(-5px)}
+.brand18-blackline .brand18-visual:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(0deg,transparent 0 43%,#d8f25236 50%,transparent 57%);animation:b18-scan 6s linear infinite}
+@keyframes b18-scan{to{transform:translateY(110%)}}
+.brand18-hotel{--b18-bg:#e6e1d7;--b18-fg:#294138;--b18-active:#8a7451}
+.brand18-hotel .brand18-layout{grid-template-columns:.72fr 1fr;direction:rtl}.brand18-hotel .brand18-layout>*{direction:ltr}
+.brand18-hotel .brand18-visual{border:9px solid #f5f1e7;border-radius:200px 200px 0 0}
+.brand18-hotel h2{font:400 clamp(56px,8vw,116px)/.8 'Cormorant Garamond',Georgia,serif}
+.brand18-hotel .brand18-selections button{border:0;border-bottom:1px solid #a6ac9c}
+.brand18-wellness{--b18-bg:#edf2e9;--b18-fg:#2d5d45;--b18-active:#437c5b;border-radius:130px 130px 15px 15px}
+.brand18-wellness .brand18-visual{border-radius:200px 200px 80px 80px}
+.brand18-wellness h2{font:400 clamp(59px,7vw,108px)/.89 'Instrument Serif',Georgia,serif}
+.brand18-wellness .brand18-selections button{border-radius:35px;border-color:#9fbea5}
+.brand18-wellness .brand18-symbol{animation:b18-breathe 7s ease-in-out infinite}
+@keyframes b18-breathe{50%{transform:scale(.9);opacity:.3}}
+.brand18-realty{--b18-bg:#edf1e7;--b18-fg:#264332;--b18-active:#32543c;background-image:linear-gradient(#63886623 1px,transparent 1px),linear-gradient(90deg,#63886623 1px,transparent 1px);background-size:40px 40px}
+.brand18-realty .brand18-visual{border:13px solid #f8f9f2;box-shadow:0 0 0 1px #53725e}
+.brand18-realty h2{font:400 clamp(54px,6.5vw,98px)/.93 'DM Serif Text',Georgia,serif}
+.brand18-realty .brand18-selections button{background:#dfe7d9;border-left:5px solid #4f795b}
+.brand18-electric{--b18-bg:#162c43;--b18-fg:#f6d34f;--b18-active:#f4ce48;--b18-activefg:#162a41;border:5px solid #f3ce4b}
+.brand18-electric h2{font:850 clamp(46px,5.5vw,87px)/.94 'Archivo Black',Impact,sans-serif}
+.brand18-electric .brand18-visual{box-shadow:12px 12px 0 #f4d34b}
+.brand18-electric .brand18-selections button{border-radius:0}
+.brand18-dental{--b18-bg:#e8f2ff;--b18-fg:#18518a;--b18-active:#2b64aa;border-radius:23px}
+.brand18-dental .brand18-visual{border-radius:23px;box-shadow:0 22px 39px #255e9138}
+.brand18-dental h2{font:750 clamp(50px,6vw,90px)/.97 'Atkinson Hyperlegible Next',system-ui,sans-serif}
+.brand18-dental .brand18-selections button{border-radius:16px;border-color:#9bc4e8}
+.brand18-bloom{--b18-bg:#f1dbe9;--b18-fg:#652d66;--b18-active:#713477;border-radius:28px 3px 28px 3px}
+.brand18-bloom .brand18-visual{border-radius:46% 8% 42% 8%;transform:rotate(3deg)}
+.brand18-bloom h2{font:400 clamp(65px,8vw,110px)/.91 'Instrument Serif',Georgia,serif}
+.brand18-bloom .brand18-selections button{border-radius:32px;background:#fff1f9;border-color:#b780b5}
+.brand18-timo{--b18-bg:#f8e7eb;--b18-fg:#623c52;--b18-active:#7f4c65}
+.brand18-timo .brand18-visual{box-shadow:24px 24px 0 #d6aebd}
+.brand18-timo h2{font:400 clamp(59px,7vw,104px)/.89 'Gloock',Georgia,serif}
+.brand18-timo .brand18-selections{grid-template-columns:repeat(3,minmax(0,1fr))}
+.brand18-timo .brand18-selections button{flex-direction:column;align-items:start;min-height:105px}
+.brand18-signal{--b18-bg:#0e1733;--b18-fg:#c8e5ff;--b18-active:#2d5fac;border:1px solid #417ac0}
+.brand18-signal h2{font:720 clamp(49px,6vw,92px)/.94 'IBM Plex Sans',system-ui,sans-serif}
+.brand18-signal .brand18-visual{background:linear-gradient(150deg,#17366d,#0b1530);border:1px solid #4e80bd}
+.brand18-screen{display:flex;align-items:end;gap:14px;padding:40px;min-height:450px}
+.brand18-screen i{display:block;flex:1;background:linear-gradient(0deg,#2c6dce,#84cff0);height:35%;border-radius:5px 5px 0 0;animation:b18-bars 4s ease-in-out infinite}
+.brand18-screen i:nth-child(2){height:74%;animation-delay:-1s}.brand18-screen i:nth-child(3){height:50%;animation-delay:-2s}.brand18-screen i:nth-child(4){height:90%;animation-delay:-.5s}.brand18-screen i:nth-child(5){height:62%;animation-delay:-1.5s}
+@keyframes b18-bars{50%{transform:scaleY(.87)}}
+@media(max-width:900px){.brand18-layout,.brand18-hotel .brand18-layout{grid-template-columns:1fr;direction:ltr}.brand18-hotel .brand18-layout>*{direction:inherit}.brand18-visual img{height:280px}.brand18-visual{min-height:260px}.brand18-wellness{border-radius:55px 55px 10px 10px}}
+@media(max-width:620px){.brand18{margin:35px 8px;padding:18px}.brand18-description h2{font-size:clamp(42px,11vw,63px)}.brand18-blackline .brand18-selections,.brand18-timo .brand18-selections{grid-template-columns:1fr}.brand18-blackline .brand18-selections button,.brand18-timo .brand18-selections button{min-height:0;flex-direction:row}.brand18-screen{min-height:260px}}
+@media(prefers-reduced-motion:reduce){.brand18 *, .brand18-visual:after{animation:none!important;transition:none!important}.brand18-visual:hover img,.brand18-selections button[aria-pressed=true]{transform:none!important}}
+
+/* V17.3 visual QA repair: Signal sample graph must have measurable bar heights.
+   Decorative CSS motion only: these bars do NOT represent measured production metrics. */
+.brand18-signal .brand18-screen{height:clamp(285px,33vw,450px);min-height:0;align-items:end;position:relative;border-bottom:1px solid #6493d4;background:radial-gradient(circle at 35% 30%,#2858a05c,transparent 55%),#101d41}
+.brand18-signal .brand18-screen:before{content:"DEMO / NO LIVE TELEMETRY";position:absolute;left:22px;top:25px;letter-spacing:.15em;font:750 9px system-ui;color:#9ccaff}
+.brand18-signal .brand18-screen i{height:var(--sample-bar,40%);align-self:end;transform-origin:bottom center;opacity:.84}
+.brand18-signal .brand18-screen i:nth-child(1){--sample-bar:42%}
+.brand18-signal .brand18-screen i:nth-child(2){--sample-bar:79%}
+.brand18-signal .brand18-screen i:nth-child(3){--sample-bar:54%}
+.brand18-signal .brand18-screen i:nth-child(4){--sample-bar:88%}
+.brand18-signal .brand18-screen i:nth-child(5){--sample-bar:63%}
+@media(max-width:620px){.brand18-signal .brand18-screen{height:270px}}
+@media(prefers-reduced-motion:reduce){.brand18-signal .brand18-screen i{animation:none!important;transform:none!important}}
+
+
+/* V18: immersive discovery immediately after the opening of each ACTUAL website.
+   Source imagery is reused from project assets, never illustrative third-party media. */
+.brand18{margin-block:clamp(30px,5vw,85px);scroll-margin-top:90px;transition:box-shadow .4s,background-color .4s}
+.brand18-visual img{transition:opacity .26s,transform 1s cubic-bezier(.22,1,.36,1),filter .8s}
+.brand18[data-active="1"] .brand18-symbol{transform:translate(-10px,9px) rotate(-8deg)}
+.brand18[data-active="2"] .brand18-symbol{transform:translate(8px,-7px) rotate(8deg)}
+.brand18-foot>[data-b18-route][hidden]{display:none!important}
+.brand18-foot>[data-b18-route] a{display:inline-block;padding:13px 21px;border:1px solid currentColor;color:inherit;text-decoration:none;font:760 12px system-ui}
+.brand18-foot>[data-b18-route] a:hover{transform:translateY(-3px)}
+.brand18 .brand18-selections button[aria-pressed=true] span{font-weight:790}
+.brand18-visual:after{pointer-events:none}
+.brand18-cafe .brand18-layout{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}
+.brand18-cafe .brand18-visual{max-width:550px;clip-path:polygon(0 0,100% 1%,99% 100%,2% 98%)}
+.brand18-cafe .brand18-description{padding:clamp(5px,2vw,25px)}
+.brand18-blackline .brand18-layout{grid-template-columns:1.15fr 1fr}
+.brand18-blackline .brand18-description h2{text-shadow:0 4px 24px #d7ee5430}
+.brand18-blackline .brand18-visual img{filter:contrast(1.22) saturate(.85)}
+.brand18-hotel .brand18-visual img{filter:sepia(.13) saturate(.8)}
+.brand18-hotel .brand18-description h2{letter-spacing:-.045em}
+.brand18-wellness .brand18-layout{gap:clamp(26px,6vw,100px)}
+.brand18-wellness .brand18-description{padding-right:clamp(0px,2vw,30px)}
+.brand18-realty .brand18-layout{grid-template-columns:1.1fr .9fr}
+.brand18-realty .brand18-visual{box-shadow:0 0 0 1px #53725e,16px 18px 0 #5c74522c}
+.brand18-electric .brand18-visual{clip-path:polygon(0 0,100% 0,100% 91%,90% 100%,0 100%)}
+.brand18-electric .brand18-description{background:repeating-linear-gradient(0deg,transparent 0 38px,#ffe45c12 39px,transparent 40px)}
+.brand18-dental .brand18-layout{grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr)}
+.brand18-dental .brand18-description h2{letter-spacing:-.05em}
+.brand18-bloom .brand18-visual img{filter:saturate(1.2) contrast(1.03)}
+.brand18-bloom .brand18-selection{border-radius:28px}
+.brand18-timo .brand18-layout{grid-template-columns:.85fr 1.15fr}
+.brand18-timo .brand18-visual img{filter:saturate(.89)}
+.brand18-signal .brand18-layout{grid-template-columns:.9fr 1.1fr}
+.brand18-signal .brand18-selection{border-color:#7cb1f3;background:#19375d}
+@media(max-width:900px){.brand18-cafe .brand18-layout,.brand18-blackline .brand18-layout,.brand18-realty .brand18-layout,.brand18-dental .brand18-layout,.brand18-timo .brand18-layout,.brand18-signal .brand18-layout{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.brand18-visual img,.brand18-symbol{transition:none!important;animation:none!important;transform:none!important}}
+/* Animations are distinct and match existing complete website identities.
+   Motion never hides content and is disabled for reduced motion. */
+@media(prefers-reduced-motion:no-preference){
+.misto .misto-lead h1{animation:b18-arrive .95s both cubic-bezier(.21,1,.27,1)}
+.blackline .blackline-hero h1{animation:b18-impact .8s both cubic-bezier(.14,1,.29,1)}
+.atelier .atelier-hero .campaign-picture img{animation:b18-softfocus 2s both ease-out}
+.mira .mira-opening h1{animation:b18-softup 1.4s both ease-out}
+.forma .forma-cover h1{animation:b18-softup 1.1s both ease-out}
+.volt .volt-lead h1{animation:b18-impact .82s both ease-out}
+.nova .nova-hero h1{animation:b18-softup 1.15s both ease-out}
+.bloom-v9 .bloom-hero h1{animation:b18-bloom 1.3s both cubic-bezier(.14,1,.32,1)}
+.ds-timo .v7-campaign h1{animation:b18-softup 1.2s both ease-out}
+.sig .sig-opening h1{animation:b18-arrive 1.1s both ease-out}
+}
+@keyframes b18-arrive{from{opacity:.3;transform:translateY(17px)}to{opacity:1;transform:translateY(0)}}
+@keyframes b18-impact{from{opacity:.3;transform:translateX(-25px) skewX(-3deg)}to{opacity:1;transform:translateX(0) skewX(0)}}
+@keyframes b18-softfocus{from{filter:blur(7px) saturate(.7)}to{filter:blur(0) saturate(.9)}}
+@keyframes b18-softup{from{opacity:.5;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@keyframes b18-bloom{from{opacity:.4;transform:scale(.94) rotate(-2deg)}to{opacity:1;transform:scale(1) rotate(0)}}
+
+/* V19: original industry-specific motion. All pages still readable without JS. */
+.v19-brand-motion-ready .v19-reveal-target:not(.v19-entered){opacity:0;transform:var(--v19-entry,translateY(34px));filter:blur(3px)}
+.v19-brand-motion-ready .v19-reveal-target.v19-entered{opacity:1;transform:none;filter:none}
+.v19-reveal-target{transition:opacity .9s ease,transform 1s cubic-bezier(.17,1,.24,1),filter .9s ease}
+.ds.misto{--v19-entry:translateY(34px) rotate(1deg)}
+.ds.blackline{--v19-entry:translateX(-45px) skewX(-2deg)}
+.ds.atelier{--v19-entry:translateY(45px) scale(.965)}
+.ds.mira{--v19-entry:translateY(20px) scale(.988)}
+.ds.forma{--v19-entry:translateX(40px)}
+.ds.volt{--v19-entry:translateX(-30px)}
+.ds.nova{--v19-entry:translateY(28px)}
+.ds.bloom-v9{--v19-entry:translateY(30px) rotate(-1.6deg)}
+.ds.ds-timo{--v19-entry:translateY(30px) scale(.975)}
+.ds.sig{--v19-entry:translateY(16px) scale(.988)}
+.brand18 .brand18-visual img.v19-image-switching{opacity:.48;filter:blur(4px) saturate(.88);transform:scale(1.038)}
+.brand18[data-active="1"] .brand18-description,.brand18[data-active="2"] .brand18-description{animation:v19-brand-change .55s cubic-bezier(.17,1,.24,1)}
+@keyframes v19-brand-change{from{opacity:.6;transform:translateY(10px)}to{opacity:1;transform:none}}
+.ds.misto .misto-season img:hover{transform:scale(1.035) rotate(-.5deg)}
+.ds.blackline .blackline-gallery img:hover{filter:contrast(1.2);transform:scale(1.026)}
+.ds.atelier .atelier-home-directory img:hover{filter:sepia(.2);transform:scale(1.03)}
+.ds.mira .mira-studio img:hover{filter:saturate(.8) brightness(1.05)}
+.ds.forma .forma-catalogue img:hover{transform:scale(1.03)}
+.ds.volt .volt-case img:hover{filter:contrast(1.23)}
+.ds.nova .nova-care img:hover{transform:scale(1.025)}
+.ds.bloom-v9 .bloom-list img:hover{transform:scale(1.05) rotate(.65deg)}
+.ds.ds-timo .v7-stock img:hover{filter:contrast(1.08);transform:scale(1.025)}
+@media(prefers-reduced-motion:reduce){.v19-brand-motion-ready .v19-reveal-target,.brand18 .brand18-visual img.v19-image-switching{opacity:1!important;transform:none!important;filter:none!important}
+.v19-reveal-target,.brand18 .brand18-visual img,.brand18 .brand18-description{transition:none!important;animation:none!important}}
+
+/* Keep decorative entrance transforms inside the responsive page canvas. */
+html{overflow-x:clip}
+body{overflow-x:clip}

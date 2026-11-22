@@ -1,0 +1,39 @@
+.nova .nova-hero{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:0;padding:0;align-items:stretch;background:#e6eff5}
+.nova-patient-intro{padding:clamp(1rem,5vw,5rem);border-inline-start:8px solid #275291;}
+.nova .nova-hero h1{font-size:clamp(2.25rem,5.6vw,6rem);max-width:13ch}
+.nova .nova-hero figure{margin:0;min-width:0}
+.nova .nova-hero .campaign-picture{aspect-ratio:auto;height:100%}
+.nova .nova-hero img{border-radius:0;height:100%}
+.nova .nova-hero nav{display:grid;gap:.4rem;max-width:24rem}
+.nova .nova-hero nav a{justify-content:start;border-radius:.25rem;text-decoration:none;padding:.65rem .8rem}
+.nova .nova-hero nav a:first-child{color:#253f65;background:#f9fcff;border:1px solid #8fa8cb}
+.nova .nova-steps ol{padding-inline-start:1.9rem}
+.nova .nova-visit-guide aside{border-radius:.35rem;border-inline-start:5px solid #5279a7}
+.nova .nova-faq details{border-block-start:1px solid #7e96b7;padding:.5rem}
+@media(max-width:650px){.nova .nova-hero{grid-template-columns:1fr}.nova .nova-hero figure{margin-inline:1rem}.nova .nova-hero .campaign-picture{aspect-ratio:2.1}}
+@media(min-width:651px){
+ .nova .nova-hero{grid-template-columns:minmax(0,.73fr) minmax(0,1.47fr)}
+ .nova .nova-hero figure{grid-area:1/1}
+ .nova-patient-intro{grid-area:1/2}
+}
+
+.nova-care-directory ol {display:grid;grid-template-columns:minmax(0,1fr);margin:0;padding:0;list-style:none;counter-reset:treatment}
+.nova-care-directory li {counter-increment:treatment;display:grid;grid-template-columns:auto minmax(0,1fr) minmax(0,1.35fr);align-items:baseline;gap:.7rem 1.2rem;padding-block:.85rem;border-block-start:1px solid #a3b8b3}
+.nova-care-directory li::before {content:"0" counter(treatment);font-variant-numeric:tabular-nums;font-weight:700}
+.nova-care-directory :is(h3,p) {margin:0}
+.nova-treatment-reading,.nova .nova-appointment-desk aside {padding:clamp(1rem,4vw,2rem);background:#e2efeb;border-block-start:3px solid #40665b}
+.nova .nova-appointment-desk {display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(1rem,5vw,4rem);align-items:start}
+.nova .nova-appointment-desk form {width:100%;margin:0}
+.nova-faq summary {min-height:44px;display:list-item;padding-block:.55rem}
+@media(max-width:680px){
+ .nova .nova-appointment-desk {grid-template-columns:minmax(0,1fr)}
+ .nova-care-directory li {grid-template-columns:auto minmax(0,1fr)}
+ .nova-care-directory li p {grid-column:2}
+}
+
+.nova .nova-steps li {padding-block:.35rem}
+.nova .nova-steps li strong,.nova .nova-steps li span {display:block}
+.nova .nova-steps li span {margin-block-start:.15rem;line-height:1.6}
+.nova-appointment-desk :is(input,select,button) {min-height:44px}
+.nova .nova-appointment-desk output {white-space:pre-line;overflow-wrap:anywhere}
+.nova .nova-visit-guide aside>a,.nova .nova-faq details>a {text-underline-offset:.15em}

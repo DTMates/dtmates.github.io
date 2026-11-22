@@ -1,0 +1,54 @@
+name: Publish Web Studio V23
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'web-studio-v23/**'
+      - '.github/workflows/web-studio-v23-pages.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify release hashes and retained public versions
+        run: |
+          test -s app-ads.txt
+          test -s web-studio-v20/index.html
+          test -s web-studio-v21/index.html
+          node --input-type=module <<'JS'
+          import {readFile} from 'node:fs/promises';
+          import {createHash} from 'node:crypto';
+          const m=JSON.parse(await readFile('web-studio-v23/manifest.json'));
+          if(m.version!==23)throw Error('Wrong release version');
+          for(const f of m.files){const data=await readFile('web-studio-v23/'+f.path);if(createHash('sha256').update(data).digest('hex')!==f.sha256)throw Error(f.path);}
+          console.log(m.files.length+' exact release file hashes');
+          JS
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - uses: actions/deploy-pages@v4
+        id: deployment
+      - name: Independently verify real V23 routes and preserved releases
+        run: |
+          set -eu
+          BASE=https://dtmates.github.io/web-studio-v23
+          for route in / /projects.html /case/timo.html /case/agile.html /case/pawmaster.html /builder.html /services.html /pricing.html /delivery.html /process.html /contact.html /privacy.html /studio.css /studio.js /motion.js /editor.js /provenance.json /manifest.json /media/screens/timo-catalogue.jpg /media/paw/sit-1.webp; do
+            curl -fsSL --retry 8 --retry-all-errors --retry-delay 5 --max-time 30 "$BASE$route" >/dev/null
+          done
+          for lang in cs en de sk pl fr es ar; do curl -fsSL "$BASE/$lang/" >/dev/null; curl -fsSL "$BASE/agile/$lang/" >/dev/null; done
+          for site in cafe blackline hotel wellness realty electric dental bloom timo signal; do curl -fsSL "$BASE/engine/sites/$site/" >/dev/null; done
+          curl -fsSL https://dtmates.github.io/web-studio-v21/ >/dev/null
+          curl -fsSL https://dtmates.github.io/web-studio-v20/ >/dev/null
+          curl -fsSL https://dtmates.github.io/app-ads.txt >/dev/null

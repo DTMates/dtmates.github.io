@@ -1,0 +1,23 @@
+{
+  "browser": "145.0.7632.6",
+  "records": [
+    {
+      "file": "agile-desktop.jpg",
+      "source": "Actual local sanitized SvelteKit build, derived from original2ae4f55; not corporate website media",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "sha256": "0ed1fd504c9273d259e69e6b79af44cfc1d717a3c28305b0480a0ebb21889afe"
+    },
+    {
+      "file": "agile-mobile.jpg",
+      "source": "Actual local sanitized SvelteKit build, derived from original2ae4f55; not corporate website media",
+      "viewport": {
+        "width": 390,
+        "height": 1000
+      },
+      "sha256": "aa52653b9d26bb2448c4787ac8e0537240b4b78ba3f00d5caa6d1e413b9fa32a"
+    }
+  ]
+}

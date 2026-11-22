@@ -1,0 +1,92 @@
+[
+  {
+    "id": "portfolio-desktop",
+    "file": "portfolio-desktop.jpg",
+    "sha256": "a1a044e69f08f5de010a01b4491fa73969e06394e801291f4713fd68144dedeb",
+    "sourceSHA256": "e21870b74f6db58e5f198bfdda4c1c171d4ecc68de46268baa16fa45e8d45c23",
+    "caption": "Actual current public Portfolio browser capture,22November2026,1440\u00d71000",
+    "publication": "Fresh headed-browser public capture; no private V17 recruiter material. Earlier approved V16 capture retained in source history.",
+    "pair": null
+  },
+  {
+    "id": "keep-workspace",
+    "file": "keep-workspace.webp",
+    "sha256": "3ccbefe36a50ea813accbbcc9e8cf62da9f9383b6a4df47b9b245a95605cfc91",
+    "sourceSHA256": "3ccbefe36a50ea813accbbcc9e8cf62da9f9383b6a4df47b9b245a95605cfc91",
+    "caption": "Warlord Keep loaded in Golden Legend Builder",
+    "publication": "Approved original owned-work evidence; historical capture, no fresh native result implied.",
+    "pair": null
+  },
+  {
+    "id": "compound-before",
+    "file": "compound-before.webp",
+    "sha256": "f9707a577c4b9b6f144cedd02c3f5c8a14f6aeb12556c51e3d91d6b970e6c67f",
+    "sourceSHA256": "f9707a577c4b9b6f144cedd02c3f5c8a14f6aeb12556c51e3d91d6b970e6c67f",
+    "caption": "AutoMap compound edit before",
+    "publication": "Approved original owned-work evidence; historical capture, no fresh native result implied.",
+    "pair": {
+      "id": "compound",
+      "cameraMatch": "MATCHED_NATIVE_CAMERA",
+      "before": "compound-before",
+      "after": "compound-after",
+      "sourceOperation": "20261113T175953Z_8cebb59f7e9e",
+      "result": "Seven planned actions, two shrub placements, 317 changed native height samples, eight saved packages, 50 capsule sweeps and pawn traversal; cold-reopened saved revision.",
+      "limitation": "Independent Kenney CC0 fixture; the original post-save GUI bridge timed out, followed by a separate read-only capture. Later post-V16 graphical handoff is a different fresh run.",
+      "sourceReceipt": "AutoMap/qa/local/v14_native/CHECKPOINT.md and Portfolio/docs/V16_RELEASE.md"
+    }
+  },
+  {
+    "id": "compound-after",
+    "file": "compound-after.webp",
+    "sha256": "86560ef954a13832140db2362adb0a656520eff8e3feb2fd1cc07e878ac5b28f",
+    "sourceSHA256": "86560ef954a13832140db2362adb0a656520eff8e3feb2fd1cc07e878ac5b28f",
+    "caption": "AutoMap compound edit after",
+    "publication": "Approved original owned-work evidence; historical capture, no fresh native result implied.",
+    "pair": {
+      "id": "compound",
+      "cameraMatch": "MATCHED_NATIVE_CAMERA",
+      "before": "compound-before",
+      "after": "compound-after",
+      "sourceOperation": "20261113T175953Z_8cebb59f7e9e",
+      "result": "Seven planned actions, two shrub placements, 317 changed native height samples, eight saved packages, 50 capsule sweeps and pawn traversal; cold-reopened saved revision.",
+      "limitation": "Independent Kenney CC0 fixture; the original post-save GUI bridge timed out, followed by a separate read-only capture. Later post-V16 graphical handoff is a different fresh run.",
+      "sourceReceipt": "AutoMap/qa/local/v14_native/CHECKPOINT.md and Portfolio/docs/V16_RELEASE.md"
+    }
+  },
+  {
+    "id": "beech-root-material-before",
+    "file": "beech-root-material-before.webp",
+    "sha256": "357b6e93b753a6db8cd100e0b23a3dee316f330b082e270609c072def8a927dd",
+    "sourceSHA256": "357b6e93b753a6db8cd100e0b23a3dee316f330b082e270609c072def8a927dd",
+    "caption": "Lower-trunk and roots Blender material study \u00b7 before",
+    "publication": "Approved original owned-work evidence; historical capture, no fresh native result implied.",
+    "pair": {
+      "id": "beech-root-material",
+      "cameraMatch": "MATCHED_BLENDER_CAMERA",
+      "beforeRevision": "0.14.1 preview_r03",
+      "afterRevision": "0.14.4 bark_surface_r02",
+      "operation": "GL3D_TREE_Beech_01/0.14.4/bark_surface_r02",
+      "sourceReceiptSHA256": "58c08f36818f7cc471ea12f516c97edb24d645a2220b9ca48a5d8b5dba083162",
+      "limitation": "Blender material comparison; geometry unchanged. Independent Unreal package persistence was checked separately; this pair is not a rendered Unreal material-quality test. ART_REVIEW remains open.",
+      "sourceReceipt": "Portfolio/docs/OPERATION_EVIDENCE_V9.json"
+    }
+  },
+  {
+    "id": "beech-root-material-after",
+    "file": "beech-root-material-after.webp",
+    "sha256": "4f86d44b77c85df27dfa8dec2b4d94d7fae7806fe0360cbfacf4a99eec3059dc",
+    "sourceSHA256": "4f86d44b77c85df27dfa8dec2b4d94d7fae7806fe0360cbfacf4a99eec3059dc",
+    "caption": "Lower-trunk and roots Blender material study \u00b7 after",
+    "publication": "Approved original owned-work evidence; historical capture, no fresh native result implied.",
+    "pair": {
+      "id": "beech-root-material",
+      "cameraMatch": "MATCHED_BLENDER_CAMERA",
+      "beforeRevision": "0.14.1 preview_r03",
+      "afterRevision": "0.14.4 bark_surface_r02",
+      "operation": "GL3D_TREE_Beech_01/0.14.4/bark_surface_r02",
+      "sourceReceiptSHA256": "58c08f36818f7cc471ea12f516c97edb24d645a2220b9ca48a5d8b5dba083162",
+      "limitation": "Blender material comparison; geometry unchanged. Independent Unreal package persistence was checked separately; this pair is not a rendered Unreal material-quality test. ART_REVIEW remains open.",
+      "sourceReceipt": "Portfolio/docs/OPERATION_EVIDENCE_V9.json"
+    }
+  }
+]
