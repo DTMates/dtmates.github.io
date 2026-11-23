@@ -375,6 +375,16 @@ function applySnapshot(snapshot) {
     !allowedLayouts.includes(data.settings?.layout)
   )
     throw Error("Unsupported configuration.");
+  for (const key of ["color", "contrast"]) {
+    const value = data.project[key];
+    if (typeof value === "string" && /^#[a-f0-9]{3}$/i.test(value))
+      data.project[key] = "#" + [...value.slice(1)].map((c) => c + c).join("");
+    if (
+      data.project[key] !== undefined &&
+      !/^#[a-f0-9]{6}$/i.test(data.project[key])
+    )
+      throw Error("Invalid project colors");
+  }
   const validatedCreator = validateCreator(data.settings.creator);
   if (
     data.settings.projectLanguage !== undefined &&
@@ -449,6 +459,15 @@ function applySnapshot(snapshot) {
     };
   } else project = normalize(data.project);
   if (
+    project.id !== "paw" &&
+    !validatedCreator.design.primary &&
+    project.color.toLowerCase() !==
+      cleanState(demos[project.id]).color.toLowerCase()
+  ) {
+    validatedCreator.design.primary = project.color;
+    validatedCreator.design.contrast = project.contrast;
+  }
+  if (
     data.settings.projectLanguage !== undefined &&
     !["cs", "en", "ar"].includes(data.settings.projectLanguage)
   )
@@ -516,6 +535,10 @@ for (const [id, key] of [
 ])
   q(id).oninput = () => {
     project[key] = q(id).value;
+    if (project.id !== "paw" && (key === "color" || key === "contrast")) {
+      settings.creator.design.primary = project.color;
+      settings.creator.design.contrast = project.contrast;
+    }
     render();
   };
 q("edit-headline").oninput = () => {

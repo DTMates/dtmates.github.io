@@ -39,7 +39,7 @@ function input(label, value, action, type = "text") {
     i = el(type === "textarea" ? "textarea" : "input");
   if (type !== "textarea") i.type = type;
   i.setAttribute("aria-label", label);
-  i.value = value || "";
+  i.value = value ?? "";
   let last = i.value;
   const changed = () => {
     if (i.value === last) return;
@@ -600,7 +600,16 @@ function drawStructure() {
 }
 function outline() {
   $("editor-frame").contentWindow.postMessage(
-    { type: "creator-outline", nonce: api.nonce, section: selected },
+    {
+      type: "creator-outline",
+      nonce: api.nonce,
+      section:
+        document.body.classList.contains("creator-preview-only") ||
+        document.body.classList.contains("creator-embed") ||
+        document.fullscreenElement
+          ? ""
+          : selected,
+    },
     "*",
   );
 }
@@ -763,7 +772,9 @@ function drawInspector() {
   for (const [i, b] of [...panel.querySelectorAll("button")]
     .filter((b) => b.textContent === "↑" || b.textContent === "↓")
     .entries())
-    b.disabled = i === 0 ? index <= 0 : index >= siblings.length - 1;
+    b.disabled =
+      section.group !== "content" ||
+      (i === 0 ? index <= 0 : index >= siblings.length - 1);
   const dup = button(T("Duplikovat sekci", "Duplicate section"), () =>
     sectionEdit((e, ps) => {
       const id = "copy_" + crypto.randomUUID();
@@ -824,17 +835,34 @@ function designPanel() {
   if (state().project.id === "paw") return;
   panel.replaceChildren(el("h2", T("Vizuální systém", "Visual system")));
   const d = state().settings.creator.design;
-  for (const k of ["background", "text", "secondary"])
+  for (const k of ["primary", "contrast", "background", "text", "secondary"])
     panel.append(
       input(
         T(
-          { background: "Pozadí", text: "Text", secondary: "Vedlejší barva" }[
-            k
-          ],
-          k,
+          {
+            primary: "Hlavní barva",
+            contrast: "Text na hlavní barvě",
+            background: "Pozadí",
+            text: "Text",
+            secondary: "Vedlejší barva",
+          }[k],
+          { primary: "Brand primary", contrast: "Text on accent" }[k] || k,
         ),
-        d[k] || "#ffffff",
-        (v) => mutate((p, s) => (s.creator.design[k] = v)),
+        d[k] ||
+          (k === "primary"
+            ? state().project.color
+            : k === "contrast"
+              ? state().project.contrast
+              : "#ffffff"),
+        (v) =>
+          mutate((p, s) => {
+            s.creator.design[k] = v;
+            if (k === "primary") {
+              p.color = v;
+              s.creator.design.contrast ||= p.contrast;
+            }
+            if (k === "contrast") p.contrast = v;
+          }),
         "color",
       ),
     );
@@ -933,10 +961,13 @@ function fullscreen() {
     "aria-pressed",
     String(document.body.classList.contains("creator-preview-only")),
   );
+  outline();
 }
 function init() {
   if (!window.dtmatesEditor) return;
   api = window.dtmatesEditor;
+  $("editor-frame").addEventListener("load", outline);
+  document.addEventListener("fullscreenchange", outline);
   const originalTemplate = $("editor-template").onchange;
   $("editor-template").onchange = () => {
     if (!choosing && !discard()) {
@@ -1035,11 +1066,9 @@ function init() {
     ),
     button(T("Uložit JSON", "Save JSON"), () => $("export-config").click()),
   );
-  const request = el(
-    "a",
-    T("Požádat o dokončení ↗", "Request development ↗"),
-    { href: "contact.html" },
-  );
+  const request = el("a", T("Požádat o dokončení ↗", "Request development ↗"), {
+    href: "contact.html",
+  });
   request.onclick = async (e) => {
     e.preventDefault();
     try {
@@ -1088,8 +1117,11 @@ function init() {
     }
   });
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape")
-      document.body.classList.remove("creator-preview-only");
+    if (
+      e.key === "Escape" &&
+      document.body.classList.contains("creator-preview-only")
+    )
+      fullscreen();
   });
   saved = api.snapshot().configuration;
   drawStructure();

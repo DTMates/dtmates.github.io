@@ -32,13 +32,13 @@
     },
     {
       "path": "creator-model.js",
-      "bytes": 22066,
-      "sha256": "4cab5c31b772b4cd4a65951d0eaa5177cea48010354d2c9d96bc4fca181ceb21"
+      "bytes": 29421,
+      "sha256": "b108ee8c6ff8954ec2050b63f363e8162dcb5e9c8e371fcc74299e72ab42dd7f"
     },
     {
       "path": "creator-ui.js",
-      "bytes": 37251,
-      "sha256": "da8f9cd79bf8363b5c391d9cee305dfa1e70019b80df4a72714ee63c2f71c709"
+      "bytes": 38226,
+      "sha256": "d0f25b805b7d1b4dce0ab86fa499a8459b369f8eb643020e78c9ee526317f200"
     },
     {
       "path": "delivery.html",
@@ -5487,8 +5487,8 @@
     },
     {
       "path": "en/editor.js",
-      "bytes": 35185,
-      "sha256": "3a0221fe809f054f5ab5399f2660eb322f0079ed52bd8a98c36d76ec88146a51"
+      "bytes": 36051,
+      "sha256": "f82aa924ec1ab7c7824efe4443372c7eb77e56d1283d3813077ac515989456fc"
     },
     {
       "path": "en/export-locales.js",
@@ -5597,8 +5597,8 @@
     },
     {
       "path": "cs/editor.js",
-      "bytes": 35244,
-      "sha256": "6ee5d322762a2e55b5b9c9699a26444cb712ac31260c11ea065b0ea225dd5b66"
+      "bytes": 36110,
+      "sha256": "378777cf3e16dbd4f4a6d485ef7e7bb2a049d9f7d34dc030db1377e911efe9f3"
     },
     {
       "path": "cs/export-locales.js",
