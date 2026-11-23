@@ -1,0 +1,638 @@
+{
+  "gallery.capture": {
+    "cs": "{brand} — skutečný snímek webu ({device})",
+    "en": "{brand} — actual website capture ({device})",
+    "de": "{brand} — echte Websiteaufnahme ({device})",
+    "sk": "{brand} — skutočný záber webu ({device})",
+    "pl": "{brand} — rzeczywisty zrzut witryny ({device})",
+    "fr": "{brand} — capture réelle du site ({device})",
+    "es": "{brand} — captura real del sitio ({device})",
+    "ar": "{brand} — لقطة فعلية للموقع ({device})"
+  },
+  "gallery.desktop": {
+    "cs": "Počítač",
+    "en": "Desktop",
+    "de": "Desktop",
+    "sk": "Počítač",
+    "pl": "Komputer",
+    "fr": "Ordinateur",
+    "es": "Escritorio",
+    "ar": "سطح المكتب"
+  },
+  "gallery.mobile": {
+    "cs": "Mobil",
+    "en": "Mobile",
+    "de": "Mobil",
+    "sk": "Mobil",
+    "pl": "Telefon",
+    "fr": "Mobile",
+    "es": "Móvil",
+    "ar": "الهاتف المحمول"
+  },
+  "paw.step": {
+    "cs": "{command} · {step}/5",
+    "en": "{command} · {step}/5",
+    "de": "{command} · {step}/5",
+    "sk": "{command} · {step}/5",
+    "pl": "{command} · {step}/5",
+    "fr": "{command} · {step}/5",
+    "es": "{command} · {step}/5",
+    "ar": "{command} · {step}/5"
+  },
+  "paw.lessonComplete": {
+    "cs": "Lekce „{command}“ dokončena",
+    "en": "{command} lesson complete",
+    "de": "Lektion „{command}“ abgeschlossen",
+    "sk": "Lekcia „{command}“ dokončená",
+    "pl": "Lekcja „{command}” ukończona",
+    "fr": "Leçon « {command} » terminée",
+    "es": "Lección «{command}» completada",
+    "ar": "اكتمل درس «{command}»"
+  },
+  "brief.progress": {
+    "cs": "{count} ze 3 částí má podklady / neodesílá se",
+    "en": "{count} of 3 sections have details / not sent",
+    "de": "{count} von 3 Abschnitten haben Angaben / nicht gesendet",
+    "sk": "{count} z 3 častí má podklady / neodosiela sa",
+    "pl": "{count} z 3 sekcji zawiera dane / nie wysłano",
+    "fr": "{count} sections sur 3 contiennent des informations / rien n’est envoyé",
+    "es": "{count} de 3 secciones tienen datos / no se ha enviado",
+    "ar": "{count} من 3 أقسام تتضمن بيانات / لم يُرسل شيء"
+  },
+  "onboarding.title": {
+    "cs": "Malý začátek. Společný pokrok.",
+    "en": "A small start. Progress together.",
+    "de": "Klein anfangen. Gemeinsam weiterkommen.",
+    "sk": "Malý začiatok. Spoločný pokrok.",
+    "pl": "Mały początek. Wspólne postępy.",
+    "fr": "Un petit début. Des progrès ensemble.",
+    "es": "Un pequeño comienzo. Progresos juntos.",
+    "ar": "بداية صغيرة. تقدّم معًا."
+  },
+  "onboarding.start": {
+    "cs": "Vyzkoušet první lekci",
+    "en": "Try the first lesson",
+    "de": "Erste Lektion ausprobieren",
+    "sk": "Vyskúšať prvú lekciu",
+    "pl": "Wypróbuj pierwszą lekcję",
+    "fr": "Essayer la première leçon",
+    "es": "Probar la primera lección",
+    "ar": "جرّب الدرس الأول"
+  },
+  "onboarding.copy": {
+    "cs": "Vyberte povel, projděte pět kroků a uložte dokončení. Tato nová webová ukázka používá původní ilustrace; nejde o původní APK.",
+    "en": "Choose a command, follow five steps and save completion. This new web demonstration uses original illustrations; it is not the original APK.",
+    "de": "Wählen Sie ein Kommando, folgen Sie fünf Schritten und speichern Sie den Abschluss. Diese neue Webdemo verwendet Originalillustrationen; sie ist nicht die ursprüngliche APK.",
+    "sk": "Vyberte povel, prejdite päť krokov a uložte dokončenie. Táto nová webová ukážka používa pôvodné ilustrácie; nejde o pôvodný APK.",
+    "pl": "Wybierz polecenie, przejdź pięć kroków i zapisz ukończenie. Ta nowa demonstracja internetowa używa oryginalnych ilustracji; nie jest oryginalnym plikiem APK.",
+    "fr": "Choisissez un ordre, suivez cinq étapes et enregistrez la fin de la leçon. Cette nouvelle démonstration web utilise les illustrations originales ; ce n’est pas l’APK d’origine.",
+    "es": "Elige una orden, sigue cinco pasos y guarda la finalización. Esta nueva demostración web utiliza las ilustraciones originales; no es el APK original.",
+    "ar": "اختر أمرًا، واتبع خمس خطوات، ثم احفظ إكمال الدرس. يستخدم هذا العرض التوضيحي الجديد على الويب الرسوم الأصلية؛ وليس ملف APK الأصلي."
+  },
+  "achievements.title": {
+    "cs": "Vaše malé úspěchy",
+    "en": "Your small achievements",
+    "de": "Ihre kleinen Erfolge",
+    "sk": "Vaše malé úspechy",
+    "pl": "Twoje małe sukcesy",
+    "fr": "Vos petites réussites",
+    "es": "Tus pequeños logros",
+    "ar": "إنجازاتك الصغيرة"
+  },
+  "achievements.badge": {
+    "cs": "První lekce dokončena",
+    "en": "First lesson completed",
+    "de": "Erste Lektion abgeschlossen",
+    "sk": "Prvá lekcia dokončená",
+    "pl": "Pierwsza lekcja ukończona",
+    "fr": "Première leçon terminée",
+    "es": "Primera lección completada",
+    "ar": "اكتمل الدرس الأول"
+  },
+  "achievements.disclaimer": {
+    "cs": "Nové ilustrační rozhraní odměn. Pokrok zůstává v tomto prohlížeči; platby ani cloud nejsou připojené.",
+    "en": "New illustrative achievement interface. Progress stays in this browser; billing and cloud are not connected.",
+    "de": "Neue illustrative Erfolgsanzeige. Der Fortschritt bleibt in diesem Browser; Abrechnung und Cloud sind nicht angebunden.",
+    "sk": "Nové ilustračné rozhranie odmien. Pokrok zostáva v tomto prehliadači; platby ani cloud nie sú pripojené.",
+    "pl": "Nowy poglądowy interfejs osiągnięć. Postępy pozostają w tej przeglądarce; płatności i chmura nie są podłączone.",
+    "fr": "Nouvelle interface illustrative de réussites. La progression reste dans ce navigateur ; la facturation et le cloud ne sont pas connectés.",
+    "es": "Nueva interfaz ilustrativa de logros. Los progresos permanecen en este navegador; no hay conexión con pagos ni con la nube.",
+    "ar": "واجهة توضيحية جديدة للإنجازات. يبقى التقدّم في هذا المتصفح؛ ولا توجد خدمات فوترة أو سحابة متصلة."
+  },
+  "editor.onboarding": {
+    "cs": "Vyberte šablonu, upravte obsah a potom stáhněte vlastní web. Jazyk ovládání nemění rozepsaný obsah projektu.",
+    "en": "Choose a template, edit the content, then download your own website. The interface language does not change your project content.",
+    "de": "Wählen Sie eine Vorlage, bearbeiten Sie die Inhalte und laden Sie anschließend Ihre eigene Website herunter. Die Oberflächensprache verändert Ihre Projektinhalte nicht.",
+    "sk": "Vyberte šablónu, upravte obsah a potom stiahnite vlastný web. Jazyk ovládania nemení rozpracovaný obsah projektu.",
+    "pl": "Wybierz szablon, edytuj treść, a następnie pobierz własną witrynę. Język interfejsu nie zmienia treści projektu.",
+    "fr": "Choisissez un modèle, modifiez le contenu, puis téléchargez votre propre site. La langue de l’interface ne modifie pas le contenu de votre projet.",
+    "es": "Elige una plantilla, edita el contenido y descarga tu propio sitio. El idioma de la interfaz no modifica el contenido del proyecto.",
+    "ar": "اختر قالبًا، وعدّل المحتوى، ثم نزّل موقعك. لا تغيّر لغة الواجهة محتوى مشروعك."
+  },
+  "editor.projectLanguage": {
+    "cs": "Jazyk obsahu projektu",
+    "en": "Project content language",
+    "de": "Sprache der Projektinhalte",
+    "sk": "Jazyk obsahu projektu",
+    "pl": "Język treści projektu",
+    "fr": "Langue du contenu du projet",
+    "es": "Idioma del contenido del proyecto",
+    "ar": "لغة محتوى المشروع"
+  },
+  "editor.projectLanguageHint": {
+    "cs": "Nativní obsah šablon: čeština, angličtina a arabština. Jazyk editoru se volí samostatně.",
+    "en": "Native template content: Czech, English and Arabic. Choose the editor language separately.",
+    "de": "Native Vorlageninhalte: Tschechisch, Englisch und Arabisch. Die Editorsprache wählen Sie separat.",
+    "sk": "Natívny obsah šablón: čeština, angličtina a arabčina. Jazyk editora sa volí samostatne.",
+    "pl": "Wbudowana treść szablonów: czeski, angielski i arabski. Język edytora wybierasz osobno.",
+    "fr": "Contenu natif des modèles : tchèque, anglais et arabe. La langue de l’éditeur se choisit séparément.",
+    "es": "Contenido nativo de las plantillas: checo, inglés y árabe. El idioma del editor se elige por separado.",
+    "ar": "محتوى القوالب الأصلي متاح بالتشيكية والإنجليزية والعربية. اختر لغة المحرّر بشكل منفصل."
+  },
+  "editor.palette": {
+    "cs": "Barevná paleta",
+    "en": "Colour palette",
+    "de": "Farbpalette",
+    "sk": "Farebná paleta",
+    "pl": "Paleta kolorów",
+    "fr": "Palette de couleurs",
+    "es": "Paleta de colores",
+    "ar": "لوحة الألوان"
+  },
+  "form.required": {
+    "cs": "Vyplňte toto pole.",
+    "en": "Please complete this field.",
+    "de": "Bitte füllen Sie dieses Feld aus.",
+    "sk": "Vyplňte toto pole.",
+    "pl": "Wypełnij to pole.",
+    "fr": "Veuillez remplir ce champ.",
+    "es": "Completa este campo.",
+    "ar": "يرجى إكمال هذا الحقل."
+  },
+  "form.email": {
+    "cs": "Zadejte platnou e-mailovou adresu.",
+    "en": "Enter a valid email address.",
+    "de": "Geben Sie eine gültige E-Mail-Adresse ein.",
+    "sk": "Zadajte platnú e-mailovú adresu.",
+    "pl": "Wpisz prawidłowy adres e-mail.",
+    "fr": "Saisissez une adresse e-mail valide.",
+    "es": "Introduce una dirección de correo electrónico válida.",
+    "ar": "أدخل عنوان بريد إلكتروني صالحًا."
+  },
+  "export.primaryLocale": {
+    "cs": "Zvolený jazyk projektu: {language}",
+    "en": "{language} is the selected project language",
+    "de": "Ausgewählte Projektsprache: {language}",
+    "sk": "Zvolený jazyk projektu: {language}",
+    "pl": "Wybrany język projektu: {language}",
+    "fr": "Langue sélectionnée pour le projet : {language}",
+    "es": "Idioma seleccionado para el proyecto: {language}",
+    "ar": "لغة المشروع المختارة: {language}"
+  },
+  "language.switching": {
+    "cs": "Měním jazyk rozhraní…",
+    "en": "Changing interface language…",
+    "de": "Oberflächensprache wird geändert…",
+    "sk": "Mením jazyk rozhrania…",
+    "pl": "Zmiana języka interfejsu…",
+    "fr": "Changement de langue de l’interface…",
+    "es": "Cambiando el idioma de la interfaz…",
+    "ar": "جارٍ تغيير لغة الواجهة…"
+  },
+  "paw.command.back-up": {
+    "cs": "Couvej",
+    "en": "Back up",
+    "de": "Zurück",
+    "sk": "Cúvaj",
+    "pl": "Cofnij",
+    "fr": "Recule",
+    "es": "Atrás",
+    "ar": "تراجع"
+  },
+  "paw.command.come": {
+    "cs": "Ke mně",
+    "en": "Come",
+    "de": "Hier",
+    "sk": "Ku mne",
+    "pl": "Do mnie",
+    "fr": "Viens",
+    "es": "Ven",
+    "ar": "تعال"
+  },
+  "paw.command.down": {
+    "cs": "Lehni",
+    "en": "Down",
+    "de": "Platz",
+    "sk": "Ľahni",
+    "pl": "Waruj",
+    "fr": "Couché",
+    "es": "Túmbate",
+    "ar": "استلقِ"
+  },
+  "paw.command.drop-it": {
+    "cs": "Pusť",
+    "en": "Drop it",
+    "de": "Aus",
+    "sk": "Pusť",
+    "pl": "Puść",
+    "fr": "Lâche",
+    "es": "Suelta",
+    "ar": "أفلت"
+  },
+  "paw.command.find-it": {
+    "cs": "Hledej",
+    "en": "Find it",
+    "de": "Such",
+    "sk": "Hľadaj",
+    "pl": "Szukaj",
+    "fr": "Cherche",
+    "es": "Busca",
+    "ar": "ابحث"
+  },
+  "paw.command.heel": {
+    "cs": "K noze",
+    "en": "Heel",
+    "de": "Fuß",
+    "sk": "K nohe",
+    "pl": "Do nogi",
+    "fr": "Au pied",
+    "es": "Junto",
+    "ar": "بجانبي"
+  },
+  "paw.command.jump": {
+    "cs": "Hop",
+    "en": "Jump",
+    "de": "Hopp",
+    "sk": "Hop",
+    "pl": "Hop",
+    "fr": "Saute",
+    "es": "Salta",
+    "ar": "اقفز"
+  },
+  "paw.command.shake-hands": {
+    "cs": "Pac",
+    "en": "Shake hands",
+    "de": "Pfote",
+    "sk": "Labku",
+    "pl": "Łapa",
+    "fr": "Donne la patte",
+    "es": "Da la pata",
+    "ar": "أعطني كفك"
+  },
+  "paw.command.spin": {
+    "cs": "Otočka",
+    "en": "Spin",
+    "de": "Dreh dich",
+    "sk": "Otočka",
+    "pl": "Obrót",
+    "fr": "Tourne",
+    "es": "Gira",
+    "ar": "دُر"
+  },
+  "paw.command.stay": {
+    "cs": "Zůstaň",
+    "en": "Stay",
+    "de": "Bleib",
+    "sk": "Zostaň",
+    "pl": "Zostań",
+    "fr": "Reste",
+    "es": "Quieto",
+    "ar": "ابقَ"
+  },
+  "paw.command.turn-around": {
+    "cs": "Obrat",
+    "en": "Turn around",
+    "de": "Kehrt",
+    "sk": "Obrat",
+    "pl": "Zawróć",
+    "fr": "Demi-tour",
+    "es": "Media vuelta",
+    "ar": "استدر"
+  },
+  "paw.command.sit": {
+    "cs": "Sedni",
+    "en": "Sit",
+    "de": "Sitz",
+    "sk": "Sadni",
+    "pl": "Siad",
+    "fr": "Assis",
+    "es": "Siéntate",
+    "ar": "اجلس"
+  },
+  "paw.command.balance": {
+    "cs": "Balancuj",
+    "en": "Balance",
+    "de": "Balanciere",
+    "sk": "Balansuj",
+    "pl": "Balansuj",
+    "fr": "Équilibre",
+    "es": "Equilibrio",
+    "ar": "توازن"
+  },
+  "paw.command.leave-it": {
+    "cs": "Nech to",
+    "en": "Leave it",
+    "de": "Lass es",
+    "sk": "Nechaj",
+    "pl": "Zostaw",
+    "fr": "Laisse",
+    "es": "Déjalo",
+    "ar": "اتركه"
+  },
+  "paw.command.fetch": {
+    "cs": "Aport · nový webový příklad",
+    "en": "Fetch · new web example",
+    "de": "Apport · neues Webbeispiel",
+    "sk": "Aport · nový webový príklad",
+    "pl": "Aport · nowy przykład webowy",
+    "fr": "Rapporte · nouvel exemple web",
+    "es": "Trae · nuevo ejemplo web",
+    "ar": "أحضر · مثال ويب جديد"
+  },
+  "paw.completed": {
+    "cs": {
+      "one": "{count} dokončený povel",
+      "few": "{count} dokončené povely",
+      "many": "{count} dokončeného povelu",
+      "other": "{count} dokončených povelů"
+    },
+    "en": {
+      "one": "{count} command completed",
+      "other": "{count} commands completed"
+    },
+    "de": {
+      "one": "{count} abgeschlossenes Kommando",
+      "other": "{count} abgeschlossene Kommandos"
+    },
+    "sk": {
+      "one": "{count} dokončený povel",
+      "few": "{count} dokončené povely",
+      "many": "{count} dokončeného povelu",
+      "other": "{count} dokončených povelov"
+    },
+    "pl": {
+      "one": "{count} ukończone polecenie",
+      "few": "{count} ukończone polecenia",
+      "many": "{count} ukończonych poleceń",
+      "other": "{count} ukończonego polecenia"
+    },
+    "fr": {
+      "one": "{count} commande terminée",
+      "many": "{count} commandes terminées",
+      "other": "{count} commandes terminées"
+    },
+    "es": {
+      "one": "{count} orden completada",
+      "many": "{count} órdenes completadas",
+      "other": "{count} órdenes completadas"
+    },
+    "ar": {
+      "zero": "أوامر مكتملة: {count}",
+      "one": "أمر مكتمل واحد ({count})",
+      "two": "أمران مكتملان ({count})",
+      "few": "{count} أوامر مكتملة",
+      "many": "{count} أمرًا مكتملًا",
+      "other": "{count} أمر مكتمل"
+    }
+  },
+  "common.before": {
+    "cs": "Před",
+    "en": "Before",
+    "de": "Vorher",
+    "sk": "Pred",
+    "pl": "Przed",
+    "fr": "Avant",
+    "es": "Antes",
+    "ar": "قبل"
+  },
+  "common.after": {
+    "cs": "Po",
+    "en": "After",
+    "de": "Nachher",
+    "sk": "Po",
+    "pl": "Po",
+    "fr": "Après",
+    "es": "Después",
+    "ar": "بعد"
+  },
+  "project.portfolioUnavailable": {
+    "cs": "Tuto veřejnou adresu se při aktuální kontrole nepodařilo načíst. Zobrazujeme dříve schválený snímek a odkaz na samostatný web.",
+    "en": "This public URL could not be reached during the current check. We show a previously approved capture and a link to the separate website.",
+    "de": "Diese öffentliche URL war bei der aktuellen Prüfung nicht erreichbar. Wir zeigen eine zuvor freigegebene Aufnahme und einen Link zur separaten Website.",
+    "sk": "Túto verejnú adresu sa pri aktuálnej kontrole nepodarilo načítať. Zobrazujeme predtým schválený záber a odkaz na samostatný web.",
+    "pl": "Podczas bieżącej kontroli nie udało się otworzyć tego publicznego adresu. Pokazujemy wcześniej zatwierdzony zrzut i odnośnik do osobnej witryny.",
+    "fr": "Cette URL publique n’a pas pu être chargée lors de la vérification actuelle. Nous présentons une capture précédemment approuvée et un lien vers le site distinct.",
+    "es": "No se pudo acceder a esta URL pública durante la comprobación actual. Mostramos una captura previamente aprobada y un enlace al sitio independiente.",
+    "ar": "تعذّر الوصول إلى هذا الرابط العام أثناء التحقّق الحالي. نعرض لقطة معتمدة سابقًا ورابطًا إلى الموقع المنفصل."
+  },
+  "project.sourceCapture": {
+    "cs": "Původní snímek zachovává jazyk zdrojové aplikace.",
+    "en": "The original capture retains the source application's language.",
+    "de": "Die Originalaufnahme behält die Sprache der Quellanwendung bei.",
+    "sk": "Pôvodný záber zachováva jazyk zdrojovej aplikácie.",
+    "pl": "Oryginalny zrzut zachowuje język aplikacji źródłowej.",
+    "fr": "La capture originale conserve la langue de l’application source.",
+    "es": "La captura original conserva el idioma de la aplicación de origen.",
+    "ar": "تحتفظ اللقطة الأصلية بلغة التطبيق المصدر."
+  },
+  "pricing.summary": {
+    "cs": "{initial} při zahájení\n{monthly} měsíčně\n{total} celkem za 18 měsíců\nNezávazný odhad. Daně a externí služby se potvrdí v nabídce.",
+    "en": "{initial} at start\n{monthly} monthly\n{total} total over 18 months\nNonbinding estimate. Taxes and external services confirmed in proposal.",
+    "de": "{initial} zum Start\n{monthly} monatlich\n{total} insgesamt für 18 Monate\nUnverbindliche Schätzung. Steuern und externe Dienste werden im Angebot bestätigt.",
+    "sk": "{initial} pri začatí\n{monthly} mesačne\n{total} spolu za 18 mesiacov\nNezáväzný odhad. Dane a externé služby sa potvrdia v ponuke.",
+    "pl": "{initial} na początek\n{monthly} miesięcznie\n{total} łącznie za 18 miesięcy\nNiewiążąca wycena. Podatki i usługi zewnętrzne zostaną potwierdzone w ofercie.",
+    "fr": "{initial} au démarrage\n{monthly} par mois\n{total} au total sur 18 mois\nEstimation sans engagement. Les taxes et les services externes seront confirmés dans la proposition.",
+    "es": "{initial} al inicio\n{monthly} al mes\n{total} en total durante 18 meses\nEstimación no vinculante. Los impuestos y servicios externos se confirmarán en la propuesta.",
+    "ar": "{initial} عند البدء\n{monthly} شهريًا\n{total} إجماليًا على مدى 18 شهرًا\nتقدير غير ملزم. تُؤكَّد الضرائب والخدمات الخارجية في العرض."
+  },
+  "pricing.briefQuote": {
+    "cs": "Odhad podle výběru: {initial} při zahájení, {monthly} měsíčně a {total} celkem za 18 měsíců. Nezávazný podklad; daně a externí služby se potvrdí v nabídce.",
+    "en": "Estimate based on your selection: {initial} at start, {monthly} monthly and {total} total over 18 months. Nonbinding estimate; taxes and external services will be confirmed in the proposal.",
+    "de": "Schätzung anhand Ihrer Auswahl: {initial} zum Start, {monthly} monatlich und {total} insgesamt für 18 Monate. Unverbindliche Schätzung; Steuern und externe Dienste werden im Angebot bestätigt.",
+    "sk": "Odhad podľa výberu: {initial} pri začatí, {monthly} mesačne a {total} spolu za 18 mesiacov. Nezáväzný podklad; dane a externé služby sa potvrdia v ponuke.",
+    "pl": "Wycena na podstawie wyboru: {initial} na początek, {monthly} miesięcznie i {total} łącznie za 18 miesięcy. Niewiążąca wycena; podatki i usługi zewnętrzne zostaną potwierdzone w ofercie.",
+    "fr": "Estimation selon votre sélection : {initial} au démarrage, {monthly} par mois et {total} au total sur 18 mois. Estimation sans engagement ; les taxes et les services externes seront confirmés dans la proposition.",
+    "es": "Estimación según tu selección: {initial} al inicio, {monthly} al mes y {total} en total durante 18 meses. Estimación no vinculante; los impuestos y servicios externos se confirmarán en la propuesta.",
+    "ar": "تقدير حسب اختيارك: {initial} عند البدء، و{monthly} شهريًا، و{total} إجماليًا على مدى 18 شهرًا. تقدير غير ملزم؛ تُؤكَّد الضرائب والخدمات الخارجية في العرض."
+  },
+  "pricing.setup": {
+    "cs": "{amount} za zavedení. Model na 18 měsíců.",
+    "en": "{amount} setup. 18-month model.",
+    "de": "{amount} für die Einrichtung. Modell für 18 Monate.",
+    "sk": "{amount} za zavedenie. Model na 18 mesiacov.",
+    "pl": "{amount} za wdrożenie. Model na 18 miesięcy.",
+    "fr": "{amount} de mise en place. Modèle sur 18 mois.",
+    "es": "{amount} de puesta en marcha. Modelo de 18 meses.",
+    "ar": "{amount} للإعداد. نموذج لمدة 18 شهرًا."
+  },
+  "pricing.month": {
+    "cs": "/ měsíc",
+    "en": "/ month",
+    "de": "/ Monat",
+    "sk": "/ mesiac",
+    "pl": "/ miesiąc",
+    "fr": "/ mois",
+    "es": "/ mes",
+    "ar": "/ شهر"
+  },
+  "paw.artworkStep": {
+    "cs": "{command}: původní ilustrace, krok {step}",
+    "en": "{command}: original illustration, step {step}",
+    "de": "{command}: Originalillustration, Schritt {step}",
+    "sk": "{command}: pôvodná ilustrácia, krok {step}",
+    "pl": "{command}: oryginalna ilustracja, krok {step}",
+    "fr": "{command} : illustration originale, étape {step}",
+    "es": "{command}: ilustración original, paso {step}",
+    "ar": "{command}: رسم أصلي، الخطوة {step}"
+  },
+  "paw.stepAria": {
+    "cs": "Krok {step} z 5",
+    "en": "Step {step} of 5",
+    "de": "Schritt {step} von 5",
+    "sk": "Krok {step} z 5",
+    "pl": "Krok {step} z 5",
+    "fr": "Étape {step} sur 5",
+    "es": "Paso {step} de 5",
+    "ar": "الخطوة {step} من 5"
+  },
+  "editor.moveUp": {
+    "cs": "Přesunout sekci {section} nahoru",
+    "en": "Move section {section} up",
+    "de": "Abschnitt {section} nach oben verschieben",
+    "sk": "Presunúť sekciu {section} nahor",
+    "pl": "Przenieś sekcję {section} w górę",
+    "fr": "Déplacer la section {section} vers le haut",
+    "es": "Mover la sección {section} hacia arriba",
+    "ar": "نقل القسم {section} إلى الأعلى"
+  },
+  "editor.moveDown": {
+    "cs": "Přesunout sekci {section} dolů",
+    "en": "Move section {section} down",
+    "de": "Abschnitt {section} nach unten verschieben",
+    "sk": "Presunúť sekciu {section} nadol",
+    "pl": "Przenieś sekcję {section} w dół",
+    "fr": "Déplacer la section {section} vers le bas",
+    "es": "Mover la sección {section} hacia abajo",
+    "ar": "نقل القسم {section} إلى الأسفل"
+  },
+  "editor.category.coffee": {
+    "cs": "Káva",
+    "en": "Coffee",
+    "de": "Kaffee",
+    "sk": "Káva",
+    "pl": "Kawa",
+    "fr": "Café",
+    "es": "Café",
+    "ar": "قهوة"
+  },
+  "editor.category.drinks": {
+    "cs": "Nápoje",
+    "en": "Drinks",
+    "de": "Getränke",
+    "sk": "Nápoje",
+    "pl": "Napoje",
+    "fr": "Boissons",
+    "es": "Bebidas",
+    "ar": "مشروبات"
+  },
+  "editor.category.breakfast": {
+    "cs": "Snídaně",
+    "en": "Breakfast",
+    "de": "Frühstück",
+    "sk": "Raňajky",
+    "pl": "Śniadania",
+    "fr": "Petit-déjeuner",
+    "es": "Desayuno",
+    "ar": "فطور"
+  },
+  "editor.category.bakery": {
+    "cs": "Pečivo",
+    "en": "Bakery",
+    "de": "Backwaren",
+    "sk": "Pečivo",
+    "pl": "Pieczywo",
+    "fr": "Boulangerie",
+    "es": "Panadería",
+    "ar": "مخبوزات"
+  },
+  "form.number": {
+    "cs": "Zadejte platné číslo.",
+    "en": "Enter a valid number.",
+    "de": "Geben Sie eine gültige Zahl ein.",
+    "sk": "Zadajte platné číslo.",
+    "pl": "Wpisz poprawną liczbę.",
+    "fr": "Saisissez un nombre valide.",
+    "es": "Introduce un número válido.",
+    "ar": "أدخل رقمًا صالحًا."
+  },
+  "form.min": {
+    "cs": "Zadejte hodnotu alespoň {min}.",
+    "en": "Enter a value of at least {min}.",
+    "de": "Geben Sie mindestens {min} ein.",
+    "sk": "Zadajte hodnotu aspoň {min}.",
+    "pl": "Wpisz wartość nie mniejszą niż {min}.",
+    "fr": "Saisissez une valeur au moins égale à {min}.",
+    "es": "Introduce un valor de al menos {min}.",
+    "ar": "أدخل قيمة لا تقل عن {min}."
+  },
+  "form.max": {
+    "cs": "Zadejte hodnotu nejvýše {max}.",
+    "en": "Enter a value no greater than {max}.",
+    "de": "Geben Sie höchstens {max} ein.",
+    "sk": "Zadajte hodnotu najviac {max}.",
+    "pl": "Wpisz wartość nie większą niż {max}.",
+    "fr": "Saisissez une valeur ne dépassant pas {max}.",
+    "es": "Introduce un valor que no supere {max}.",
+    "ar": "أدخل قيمة لا تتجاوز {max}."
+  },
+  "language.storageError": {
+    "cs": "Nepodařilo se uchovat koncept pro změnu jazyka. Vaše práce zůstává na této stránce. Před dalším pokusem stáhněte konfiguraci.",
+    "en": "Could not preserve the draft for a language change. Your work is still on this page. Download the configuration before trying again.",
+    "de": "Der Entwurf konnte für den Sprachwechsel nicht gesichert werden. Ihre Arbeit befindet sich weiterhin auf dieser Seite. Laden Sie die Konfiguration herunter, bevor Sie es erneut versuchen.",
+    "sk": "Nepodarilo sa uchovať koncept na zmenu jazyka. Vaša práca zostáva na tejto stránke. Pred ďalším pokusom stiahnite konfiguráciu.",
+    "pl": "Nie udało się zachować szkicu na potrzeby zmiany języka. Twoja praca nadal znajduje się na tej stronie. Pobierz konfigurację przed ponowną próbą.",
+    "fr": "Impossible de conserver le brouillon pour changer de langue. Votre travail est toujours sur cette page. Téléchargez la configuration avant de réessayer.",
+    "es": "No se ha podido conservar el borrador para cambiar de idioma. Tu trabajo sigue en esta página. Descarga la configuración antes de volver a intentarlo.",
+    "ar": "تعذّر حفظ المسودة لتغيير اللغة. لا يزال عملك موجودًا في هذه الصفحة. نزّل الإعدادات قبل المحاولة مجددًا."
+  },
+  "privacy.localeTitle": {
+    "cs": "Dočasné uložení při změně jazyka",
+    "en": "Temporary language-switch snapshot",
+    "de": "Temporärer Stand beim Sprachwechsel",
+    "sk": "Dočasné uloženie pri zmene jazyka",
+    "pl": "Tymczasowy zapis przy zmianie języka",
+    "fr": "Sauvegarde temporaire lors du changement de langue",
+    "es": "Copia temporal al cambiar de idioma",
+    "ar": "نسخة مؤقتة عند تغيير اللغة"
+  },
+  "privacy.localeDraft": {
+    "cs": "Při změně jazyka rozhraní se v tomto prohlížeči dočasně uloží stav, aby se zachoval váš koncept, historie vracení změn a vyplněné zadání. Po úspěšném obnovení se odstraní. Pokud je přepnutí přerušeno, můžete jej vymazat v nastavení dat webu v prohlížeči. Nic se neodesílá na server.",
+    "en": "When you switch the interface language, a temporary snapshot is stored in this browser to preserve your draft, undo history and entered brief. It is removed after successful restoration. If the switch is interrupted, you can clear it through the browser site-data settings. Nothing is sent to a server.",
+    "de": "Wenn Sie die Sprache der Oberfläche wechseln, wird in diesem Browser ein vorübergehender Stand gespeichert, um Ihren Entwurf, den Verlauf zum Rückgängigmachen und das ausgefüllte Projektbriefing zu erhalten. Nach erfolgreicher Wiederherstellung wird er gelöscht. Wird der Wechsel unterbrochen, können Sie ihn in den Website-Dateneinstellungen des Browsers löschen. Es wird nichts an einen Server gesendet.",
+    "sk": "Pri zmene jazyka rozhrania sa v tomto prehliadači dočasne uloží stav, aby sa zachoval váš koncept, história vracania zmien a vyplnené zadanie. Po úspešnom obnovení sa odstráni. Ak je prepnutie prerušené, môžete ho vymazať v nastaveniach údajov webu v prehliadači. Nič sa neodosiela na server.",
+    "pl": "Przy zmianie języka interfejsu w tej przeglądarce zapisywany jest tymczasowy stan, aby zachować szkic, historię cofania zmian i wypełniony opis projektu. Po pomyślnym przywróceniu zostaje usunięty. Jeśli zmiana języka zostanie przerwana, możesz go usunąć w ustawieniach danych witryny w przeglądarce. Nic nie jest wysyłane na serwer.",
+    "fr": "Lorsque vous changez la langue de l’interface, une copie temporaire est enregistrée dans ce navigateur pour conserver votre brouillon, l’historique d’annulation et le cahier des charges saisi. Elle est supprimée après une restauration réussie. Si le changement est interrompu, vous pouvez l’effacer dans les paramètres de données du site du navigateur. Rien n’est envoyé à un serveur.",
+    "es": "Al cambiar el idioma de la interfaz, se guarda una copia temporal en este navegador para conservar tu borrador, el historial para deshacer cambios y el encargo introducido. Se elimina tras restaurar los datos correctamente. Si el cambio se interrumpe, puedes borrarla en los ajustes de datos del sitio del navegador. No se envía nada a un servidor.",
+    "ar": "عند تغيير لغة الواجهة، تُحفظ نسخة مؤقتة في هذا المتصفح للحفاظ على مسودتك وسجل التراجع عن التغييرات وموجز المشروع الذي أدخلته. تُحذف بعد استعادة البيانات بنجاح. إذا انقطع التبديل، يمكنك مسحها من إعدادات بيانات الموقع في المتصفح. لا يُرسل أي شيء إلى خادم."
+  },
+  "form.minLength": {
+    "cs": "Zadejte alespoň {min} znaků.",
+    "en": "Enter at least {min} characters.",
+    "de": "Geben Sie mindestens {min} Zeichen ein.",
+    "sk": "Zadajte aspoň {min} znakov.",
+    "pl": "Wpisz co najmniej {min} znaków.",
+    "fr": "Saisissez au moins {min} caractères.",
+    "es": "Introduce al menos {min} caracteres.",
+    "ar": "أدخل {min} حرفًا على الأقل."
+  },
+  "form.maxLength": {
+    "cs": "Zadejte nejvýše {max} znaků.",
+    "en": "Enter no more than {max} characters.",
+    "de": "Geben Sie höchstens {max} Zeichen ein.",
+    "sk": "Zadajte najviac {max} znakov.",
+    "pl": "Wpisz nie więcej niż {max} znaków.",
+    "fr": "Saisissez au maximum {max} caractères.",
+    "es": "Introduce como máximo {max} caracteres.",
+    "ar": "أدخل {max} حرفًا كحد أقصى."
+  }
+}

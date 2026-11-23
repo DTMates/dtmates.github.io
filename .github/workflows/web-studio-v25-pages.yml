@@ -1,0 +1,54 @@
+name: Publish Web Studio V25
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'web-studio-v25/**'
+      - '.github/workflows/web-studio-v25-pages.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify V25 hashes and preserve every prior release
+        run: |
+          test -s app-ads.txt
+          for v in 20 21 22 23 24; do test -s web-studio-v$v/index.html; done
+          node --input-type=module <<'JS'
+          import {readFile} from 'node:fs/promises';
+          import {createHash} from 'node:crypto';
+          const m=JSON.parse(await readFile('web-studio-v25/manifest.json'));
+          if(m.version!==25)throw Error('Wrong release');
+          if(JSON.stringify(m.locales)!==JSON.stringify(['cs','en']))throw Error('Wrong primary locales');
+          for(const f of m.files){const bytes=await readFile('web-studio-v25/'+f.path);if(bytes.length!==f.bytes||createHash('sha256').update(bytes).digest('hex')!==f.sha256)throw Error(f.path)}
+          console.log(m.files.length+' exact V25 file hashes');
+          JS
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - uses: actions/deploy-pages@v4
+        id: deployment
+      - name: Independently verify V25 and retained public routes
+        run: |
+          set -eu
+          BASE=https://dtmates.github.io/web-studio-v25
+          for route in / /v25.css /presentation.js /creator-model.js /creator-ui.js /manifest.json; do curl -fsSL --retry 8 --retry-all-errors --retry-delay 5 --max-time 30 "$BASE$route" >/dev/null; done
+          for lang in cs en; do
+            for route in / /projects.html /builder.html /case/timo.html /case/agile.html /case/pawmaster.html /services.html /pricing.html /delivery.html /process.html /contact.html /privacy.html; do curl -fsSL "$BASE/$lang$route" >/dev/null; done
+          done
+          for lang in cs en de sk pl fr es ar; do curl -fsSL "$BASE/agile/$lang/" >/dev/null; done
+          for site in cafe blackline hotel wellness realty electric dental bloom timo signal; do curl -fsSL "$BASE/engine/sites/$site/" >/dev/null; done
+          for v in 20 21 22 23 24; do curl -fsSL https://dtmates.github.io/web-studio-v$v/ >/dev/null; done
+          curl -fsSL https://dtmates.github.io/app-ads.txt >/dev/null

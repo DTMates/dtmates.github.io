@@ -1,0 +1,33 @@
+{
+  "schema_version": 3,
+  "pages": [
+    "index.html",
+    "services/index.html",
+    "services/interior/index.html",
+    "services/paint/index.html",
+    "services/protection/index.html",
+    "services/maintenance/index.html",
+    "packages/index.html",
+    "gallery/index.html",
+    "request-quote/index.html",
+    "en/index.html",
+    "en/services/index.html",
+    "en/services/interior/index.html",
+    "en/services/paint/index.html",
+    "en/services/protection/index.html",
+    "en/services/maintenance/index.html",
+    "en/packages/index.html",
+    "en/gallery/index.html",
+    "en/request-quote/index.html",
+    "ar/index.html",
+    "ar/services/index.html",
+    "ar/services/interior/index.html",
+    "ar/services/paint/index.html",
+    "ar/services/protection/index.html",
+    "ar/services/maintenance/index.html",
+    "ar/packages/index.html",
+    "ar/gallery/index.html",
+    "ar/request-quote/index.html"
+  ],
+  "missing": []
+}

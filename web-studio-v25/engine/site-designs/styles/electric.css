@@ -1,0 +1,39 @@
+.volt .volt-lead{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:1px;padding:1px;background:#162337;align-items:stretch}
+.volt-job-sheet{padding:clamp(1rem,5vw,5rem);background-color:#efbc39;background-image:linear-gradient(#17284319 1px,transparent 1px),linear-gradient(90deg,#17284319 1px,transparent 1px);background-size:2rem 2rem}
+.volt .volt-lead h1{font-size:clamp(2.5rem,6.15vw,7rem);text-wrap:initial}
+.volt .volt-lead figure{margin:0;min-width:0}
+.volt .volt-lead .campaign-picture{aspect-ratio:auto;height:100%;margin:0}
+.volt .volt-lead img{height:100%;border:0;box-shadow:none}
+.volt-front-index{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));background:#162337;color:#fff4dd}
+.volt-front-index a{min-height:3.3rem;padding:.7rem;display:flex;align-items:center;justify-content:center;text-align:center;border-inline-end:1px solid #879097}
+.volt main>.volt-title{padding-block-end:.8rem;border-block-end:4px solid #162337}
+.volt .volt-technical{border-inline-start:5px solid #f1bf34}
+.volt .volt-quote fieldset{border-block-start:4px solid #162337}
+@media(max-width:650px){.volt .volt-lead{grid-template-columns:1fr}.volt .volt-lead .campaign-picture{aspect-ratio:1.7}.volt-front-index a{padding:.4rem;font-size:.82rem}}
+.volt .volt-lead h1{font-size:clamp(2.3rem,5.05vw,6.05rem)}
+
+.volt .volt-scope-map {margin:0;background:#252f35;color:#fff;padding:1rem;border-inline-start:.4rem solid #f0c14d}
+.volt-scope-map figcaption {font-weight:700;padding:.3rem 0 .9rem}
+.volt-scope-map ol {list-style:none;padding:0;margin:0;counter-reset:scope;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px;background:#63717a}
+.volt-scope-map li {counter-increment:scope;padding:.8rem;background:#252f35}
+.volt-scope-map li::before {content:"0" counter(scope);display:block;color:#f0c14d;font-variant-numeric:tabular-nums}
+.volt .volt-spec-sheet figure {margin:0}
+.volt-spec-sheet figcaption {padding-block:.45rem;border-block-end:1px solid currentColor}
+.volt .volt-work-order {display:grid;grid-template-columns:minmax(10rem,.7fr) minmax(0,1.4fr);gap:1rem 2rem;align-items:start}
+.volt-work-order aside {padding:1rem;border:1px solid currentColor}
+.volt-work-order aside h2 {margin-top:0}
+.volt .volt-work-order form {width:100%;margin:0}
+.volt .volt-scope-record article {border-block-start:1px solid #747b78}
+@media(max-width:680px){.volt .volt-work-order{grid-template-columns:minmax(0,1fr)}.volt-work-order aside{grid-row:2}}
+
+.volt-scope-output {
+  margin-block: 1.3rem .85rem;
+  padding: .8rem 1rem;
+  border-inline-start: .25rem solid #b48313;
+  background: #fff9e5;
+  color: #162337;
+}
+.volt-scope-output h3,.volt-scope-output p {margin:0}
+.volt-scope-output p {margin-block-start:.25rem}
+.volt .volt-spec-sheet figcaption {font-size:.88rem}
+.volt-work-order :is(input,select,textarea,button) {min-height:44px}

@@ -1,0 +1,47 @@
+.atelier .atelier-hero{display:grid;min-height:0;grid-template-columns:minmax(0,1fr);padding:0;margin:0;max-width:none}
+.atelier .atelier-hero .campaign-picture{position:relative;inset:auto;grid-area:auto;z-index:auto;aspect-ratio:2.55;min-height:0}
+.atelier .atelier-hero>img{grid-area:auto;min-height:0;height:auto;aspect-ratio:2.55}
+.atelier .atelier-hero>div{grid-area:auto;place-self:stretch;background:#2f382d;color:#f8efdc;padding:clamp(.8rem,3vw,2rem);max-width:none}
+.atelier .atelier-hero .atelier-title{padding:0}
+.atelier .atelier-hero .atelier-title h1{font-size:clamp(2.7rem,7vw,7.4rem);margin-bottom:.15em}
+.atelier-stay-rail{display:flex;justify-content:center;gap:0;flex-wrap:wrap;background:#e9dfcb;border-bottom:1px solid #a99a7d}
+.atelier-stay-rail a{padding:.75rem 1.15rem;display:inline-flex;align-items:center;min-height:3rem}
+.atelier-stay-rail a:last-child{background:#354637;color:#fff9ec}
+.atelier .atelier-room{align-items:center;border-inline-start:1px solid #bfb098}
+.atelier .atelier-experience{border-block:1px solid #bfb098}
+.atelier .atelier-stay form{border:1px solid #a89a7d;padding:clamp(.8rem,3vw,2rem)}
+@media(max-width:620px){.atelier .atelier-hero .campaign-picture,.atelier .atelier-hero>img{aspect-ratio:1.28}.atelier-stay-rail a{flex:1 0 auto;justify-content:center;padding:.55rem .45rem}}
+
+.atelier-head [aria-current="page"] {text-decoration:underline;text-underline-offset:.4em}
+.atelier .atelier-room-directory {display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(2rem,5vw,5rem)}
+.atelier-room-directory article,.atelier .atelier-room-spread,.atelier .atelier-home-directory,.atelier .atelier-breakfast,.atelier .atelier-experiences-note,.atelier .atelier-stay-desk {
+  display:grid;
+  grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);
+  align-items:center;
+  gap:clamp(1rem,5vw,5rem);
+}
+.atelier-room-directory article:nth-child(even) figure {order:1}
+.atelier-room-directory article figure,.atelier-room-spread figure,.atelier-breakfast figure {margin:0}
+.atelier-room-directory article img,.atelier-room-spread img,.atelier-breakfast img {width:100%;display:block;object-fit:cover;aspect-ratio:1.47;height:auto}
+.atelier-room-directory article div {padding-inline:0}
+.atelier-room-directory h2 {margin-block:.15em .35em}
+.atelier-room-capacity,.atelier-room-amenities {border-block-start:1px solid #a99a7d;padding-block-start:.6rem}
+.atelier .atelier-room-spread {grid-template-columns:minmax(0,.8fr) minmax(0,1.3fr)}
+.atelier .atelier-room-spread .atelier-title {width:100%;padding:0;margin:0}
+.atelier-room-spread dl div {display:grid;grid-template-columns:minmax(5em,.55fr) minmax(0,1fr);gap:.5rem;border-block-start:1px solid #a99a7d;padding-block:.6rem}
+.atelier-room-spread dd {margin:0}
+.atelier-room-spread a,.atelier-other-rooms a,.atelier-home-directory a {text-decoration:underline;text-underline-offset:.3em}
+.atelier-home-directory ul {list-style:none;padding:0;margin:0}
+.atelier-home-directory li {display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem 1rem;border-block-start:1px solid #a99a7d;padding-block:.85rem}
+.atelier-other-rooms {display:flex;flex-wrap:wrap;gap:1rem;border-block-start:1px solid #a99a7d;padding-block:1rem}
+.atelier .atelier-breakfast {grid-template-columns:minmax(0,1.65fr) minmax(0,1fr)}
+.atelier .atelier-breakfast figure img {aspect-ratio:1.8}
+.atelier .atelier-experiences-note {border-block-start:1px solid #a99a7d}
+.atelier .atelier-stay-desk {grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr);align-items:start}
+.atelier-stay-desk aside {background:#e9dfcb;padding:1.2rem}
+.atelier-stay-desk aside h2 {margin-top:0}
+.atelier-stay-desk form {margin:0;width:100%}
+@media(max-width:720px){
+  .atelier .atelier-room-directory article,.atelier .atelier-room-spread,.atelier .atelier-home-directory,.atelier .atelier-breakfast,.atelier .atelier-experiences-note,.atelier .atelier-stay-desk {grid-template-columns:minmax(0,1fr)}
+  .atelier-room-directory article:nth-child(even) figure {order:0}
+}
