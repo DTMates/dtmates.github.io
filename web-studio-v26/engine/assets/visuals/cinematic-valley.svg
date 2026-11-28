@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 850" role="img" aria-labelledby="title desc">
+<title id="title">Original cinematic emerald mountain valley</title>
+<desc id="desc">Decorative vector mountains, distant forest, golden light and abstract aurora. No people, logos or claims.</desc>
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0.8" y2="1"><stop stop-color="#021c1b"/><stop offset=".43" stop-color="#0a433b"/><stop offset=".78" stop-color="#367363"/><stop offset="1" stop-color="#daa768"/></linearGradient>
+<linearGradient id="ridge1" x1="0" y1="0" x2=".2" y2="1"><stop stop-color="#2b7663"/><stop offset="1" stop-color="#123f37"/></linearGradient>
+<linearGradient id="ridge2" x1="0" y1="0" x2=".2" y2="1"><stop stop-color="#185446"/><stop offset="1" stop-color="#072f2a"/></linearGradient>
+<linearGradient id="ridge3" x1="0" y1="0" x2=".5" y2="1"><stop stop-color="#0e3f34"/><stop offset="1" stop-color="#061f1c"/></linearGradient>
+<radialGradient id="glow"><stop stop-color="#ffe8b1" stop-opacity="1"/><stop offset=".16" stop-color="#f7c67e" stop-opacity=".68"/><stop offset=".52" stop-color="#f7ba6d" stop-opacity=".17"/><stop offset="1" stop-color="#dca055" stop-opacity="0"/></radialGradient>
+<linearGradient id="river" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#113a38" stop-opacity="0"/><stop offset=".34" stop-color="#b7cead" stop-opacity=".58"/><stop offset=".59" stop-color="#edc785" stop-opacity=".79"/><stop offset="1" stop-color="#173b39" stop-opacity="0"/></linearGradient>
+<filter id="soft"><feGaussianBlur stdDeviation="23"/></filter>
+</defs>
+<rect width="1600" height="850" fill="url(#sky)"/>
+<path d="M0 220C216 150 406 168 660 206s417-70 593-41 245-7 347-25v340H0z" fill="#207966" opacity=".17" filter="url(#soft)"/>
+<circle cx="1150" cy="466" r="330" fill="url(#glow)"/>
+<path d="M0 520L95 427l100 33 175-146 143 100 109-145 160 133 122-63 126 116 187-193 125 151 157-98 100 105v415H0Z" fill="#589587" opacity=".48"/>
+<path d="M0 579L125 467l122 43 208-153 150 93 102-71 122 83 146-86 165 112 154-79 140 70 166-92v375H0Z" fill="url(#ridge1)" opacity=".76"/>
+<path d="M0 650l153-132 166 84 219-112 130 51 132-65 189 91 126-69 192 60 138-80 165 34v282H0Z" fill="url(#ridge2)"/>
+<path d="M0 677c153-27 217-8 328-32s202-12 316 21 155 8 257-16 202 6 320 31 205-25 379-9v177H0Z" fill="#0c382f" opacity=".81"/>
+<path d="M0 723C133 699 254 687 384 724s278 40 445 14 331-57 493-23 210 20 278 4v140H0Z" fill="url(#ridge3)"/>
+<path d="M940 530C996 580 1103 605 1082 653c-10 24-83 42-105 62-31 28-15 53 25 78s92 33 163 35" fill="none" stroke="url(#river)" stroke-width="58" opacity=".7" stroke-linecap="round"/>
+<path d="M0 676c282-26 359-39 522-10s263-17 459-12 368 47 619 4" fill="none" stroke="#dbb577" stroke-opacity=".21" stroke-width="2"/>
+<path d="M-80 444c252-162 546-176 880-121S1392 223 1666 52" fill="none" stroke="#f3c781" stroke-opacity=".8" stroke-width="2.4"/>
+<path d="M-80 441c252-162 546-176 880-121S1392 223 1666 52" fill="none" stroke="#f4d69b" stroke-opacity=".22" stroke-width="16" filter="url(#soft)"/>
+<g fill="#ffdeaa"><circle cx="536" cy="320" r="4"/><circle cx="1139" cy="239" r="3"/><circle cx="1394" cy="177" r="4"/><circle cx="670" cy="486" r="2"/><circle cx="148" cy="388" r="2"/></g>
+<g fill="#0a2f28" opacity=".8">
+<path d="M60 720l10-48 10 48h-8l-2 21h-3l-2-21zM100 729l11-64 11 64h-9l-1 30h-4l-1-30zM166 726l10-59 9 59h-8l-1 24h-4l-1-24zM1413 722l14-77 13 77h-11l-1 37h-4l-2-37zM1454 727l10-51 10 51h-8l-1 27h-3l-1-27zM1494 718l13-74 12 74h-10l-1 36h-4l-1-36zM1530 722l16-79 14 79h-12l-1 37h-4l-1-37z"/>
+</g>
+<rect width="1600" height="850" fill="#041c1a" opacity=".12"/>
+</svg>

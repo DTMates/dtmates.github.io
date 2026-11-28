@@ -1,0 +1,24 @@
+{
+  "schema_version": 3,
+  "pages": [
+    "index.html",
+    "product/index.html",
+    "demo/index.html",
+    "onboarding/index.html",
+    "pricing/index.html",
+    "contact/index.html",
+    "en/index.html",
+    "en/product/index.html",
+    "en/demo/index.html",
+    "en/onboarding/index.html",
+    "en/pricing/index.html",
+    "en/contact/index.html",
+    "ar/index.html",
+    "ar/product/index.html",
+    "ar/demo/index.html",
+    "ar/onboarding/index.html",
+    "ar/pricing/index.html",
+    "ar/contact/index.html"
+  ],
+  "missing": []
+}

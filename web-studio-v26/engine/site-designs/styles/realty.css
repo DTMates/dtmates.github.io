@@ -1,0 +1,39 @@
+.forma .forma-cover{grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto;padding:0;margin:0;gap:0;max-width:none;background:#efebe1}
+.forma .forma-cover .campaign-picture,.forma .forma-cover>img{grid-area:1/1;aspect-ratio:2.35;height:auto;min-height:0}
+.forma .forma-cover>div{grid-area:2/1;display:flex;justify-content:space-between;align-items:end;gap:.65rem 1.1rem;padding:clamp(1rem,3vw,3rem) clamp(1rem,5vw,5rem);border-block-end:2px solid #272923}
+.forma .forma-cover h1{font-size:clamp(2.45rem,6vw,6.6rem);text-wrap:initial;max-width:17ch}
+.forma-front-directory header{display:flex;justify-content:space-between;gap:1rem;align-items:end}
+.forma .forma-front-directory .forma-grid{grid-template-columns:1.18fr .85fr 1fr;gap:1px;background:#79766b;border:1px solid #79766b}
+.forma-front-directory .forma-grid article{background:#faf7ee}
+.forma .forma-detail{border-block:2px solid #272923}
+.forma .forma-catalogue form{border-block-start:2px solid #272923}
+.forma .forma-view form{background:#eee9dd}
+@media(max-width:620px){
+ .forma .forma-cover .campaign-picture,.forma .forma-cover>img{aspect-ratio:1.55}
+ .forma .forma-cover>div{display:block}
+ .forma .forma-front-directory .forma-grid{display:grid;grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:80%;overflow:auto;scroll-snap-type:x mandatory}
+ .forma-front-directory .forma-grid article{scroll-snap-align:start}
+}
+
+.forma .forma-search-catalogue {display:grid;grid-template-columns:minmax(13rem,.35fr) minmax(0,1fr);gap:clamp(1rem,3vw,3rem);align-items:start}
+.forma .forma-search-catalogue form {width:100%;display:grid;grid-template-columns:minmax(0,1fr);margin:0}
+.forma .forma-search-catalogue .forma-grid {grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:#a59f91}
+.forma .forma-search-catalogue article {background:#f8f3e9}
+.forma .forma-dossier {display:grid;grid-template-columns:minmax(0,1.6fr) minmax(14rem,1fr);gap:clamp(1rem,5vw,5rem);align-items:start}
+.forma-dossier-images figure {margin:.75rem 0 0;width:70%}
+.forma-dossier-images button {padding:0;display:block;width:100%;background:transparent;border:0}
+.forma-dossier-images button img {display:block;width:100%;height:auto;aspect-ratio:1.65;object-fit:cover}
+.forma-dossier-images figcaption {padding-block:.45rem}
+.forma-dossier aside {padding:1rem;border-block-start:3px solid #272923;background:#eee9dd}
+.forma-dossier aside h2 {margin-block:0 .5rem}
+.forma-dossier dl div {border-block-start:1px solid #a59f91;padding-block:.55rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem}
+.forma-dossier dd {margin:0;font-variant-numeric:tabular-nums}
+.forma .forma-view-desk {display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(1rem,5vw,5rem);align-items:start}
+.forma .forma-view-desk form {width:100%;margin:0}
+@media(max-width:740px){
+ .forma .forma-search-catalogue,.forma .forma-dossier,.forma .forma-view-desk {grid-template-columns:minmax(0,1fr)}
+}
+@media(max-width:500px){
+ .forma .forma-search-catalogue .forma-grid {grid-template-columns:minmax(0,1fr)}
+ .forma-dossier-images figure {width:100%}
+}

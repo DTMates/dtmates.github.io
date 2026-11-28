@@ -1,0 +1,18 @@
+{
+  "schema_version": 3,
+  "pages": [
+    "index.html",
+    "menu/index.html",
+    "about/index.html",
+    "visit/index.html",
+    "en/index.html",
+    "en/menu/index.html",
+    "en/about/index.html",
+    "en/visit/index.html",
+    "ar/index.html",
+    "ar/menu/index.html",
+    "ar/about/index.html",
+    "ar/visit/index.html"
+  ],
+  "missing": []
+}

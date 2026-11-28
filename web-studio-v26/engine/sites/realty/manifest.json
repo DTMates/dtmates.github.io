@@ -1,0 +1,33 @@
+{
+  "schema_version": 3,
+  "pages": [
+    "index.html",
+    "properties/index.html",
+    "properties/sample-apartment/index.html",
+    "properties/garden-house/index.html",
+    "properties/terrace-loft/index.html",
+    "approach/index.html",
+    "contact/index.html",
+    "listings/index.html",
+    "viewing/index.html",
+    "en/index.html",
+    "en/properties/index.html",
+    "en/properties/sample-apartment/index.html",
+    "en/properties/garden-house/index.html",
+    "en/properties/terrace-loft/index.html",
+    "en/approach/index.html",
+    "en/contact/index.html",
+    "en/listings/index.html",
+    "en/viewing/index.html",
+    "ar/index.html",
+    "ar/properties/index.html",
+    "ar/properties/sample-apartment/index.html",
+    "ar/properties/garden-house/index.html",
+    "ar/properties/terrace-loft/index.html",
+    "ar/approach/index.html",
+    "ar/contact/index.html",
+    "ar/listings/index.html",
+    "ar/viewing/index.html"
+  ],
+  "missing": []
+}
